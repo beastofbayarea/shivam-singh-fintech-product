@@ -10,7 +10,7 @@ The all-in-one Android device combined card, contactless, electronic-money and Q
 
 The product question was therefore not whether to “give away a terminal.” It was whether a zero-upfront offer could produce an active, contribution-positive merchant relationship.
 
-I owned the merchant operating model from acquisition through six-month retention and subsidy recovery. I wrote the cohort P&L, defined the activation and qualification clocks, sequenced learning from 50 merchants to a 500-merchant pilot, aligned six teams on one lifecycle, and set the evidence required before a zero-yen hardware offer could become a scalable payments-and-services relationship.
+My merchant operating model ran from acquisition through six-month retention and subsidy recovery. I wrote the cohort P&L, defined the activation and qualification clocks, sequenced learning from 50 merchants to a 500-merchant pilot, aligned six teams on one lifecycle, and set the evidence required before a zero-yen hardware offer could become a scalable payments-and-services relationship.
 
 ## I wrote the cohort P&L before scaling the offer
 

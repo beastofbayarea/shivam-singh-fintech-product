@@ -4,7 +4,7 @@ I led the alternative-credit product for a Southeast Asian digital bank launch d
 
 The work occurred from July 2014 to June 2016. Roughly 70% of the target group had little or no formal credit history, and bureau-led approval was below 10%. The product needed to solve three coupled models: **eligibility**, **first exposure**, and **economic distribution**.
 
-I owned that full inclusion product, not only the credit model: govern more than 400 candidate signals, create a safe no-data route, graduate exposure from observed repayment, embed acquisition in useful payment behavior, define the bounded release with regulators and control owners, and make approval, CAC, customer growth, and non-performing loans travel on one scorecard. The reported launch crossed 100,000 active customers while approval exceeded 40%, CAC stayed below $10, and NPLs were 2.4%—with each denominator caveat preserved below.
+My remit covered the full inclusion product, not only the credit model: govern more than 400 candidate signals, create a safe no-data route, graduate exposure from observed repayment, embed acquisition in useful payment behavior, define the bounded release with regulators and control owners, and make approval, CAC, customer growth, and non-performing loans travel on one scorecard. The reported launch crossed 100,000 active customers while approval exceeded 40%, CAC stayed below $10, and NPLs were 2.4%—with each denominator caveat preserved below.
 
 ## Model one: eligibility without data overreach
 

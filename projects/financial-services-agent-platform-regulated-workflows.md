@@ -4,7 +4,7 @@ I led a product for financial institutions that needed software agents to do rea
 
 The work sits in my AWS role beginning in July 2024. Compliance review could add six to eight weeks when a team could not reconstruct what an agent had read, decided, called, or changed. The product brief therefore began at the point where the demo stopped.
 
-I owned the product contract that let institutions move from prototypes to governed work: the managed first mile, private-knowledge path, action tiers, identity context, trace profiles, runaway-work brakes, model routing, and workflow approval standard. That joined customer adoption and unit economics in one platform decision, including a reported $12 million annualized routing case and more than 250,000 annualized support hours—both preserved as modeled run rates, not booked savings.
+The product contract under my direction let institutions move from prototypes to governed work: the managed first mile, private-knowledge path, action tiers, identity context, trace profiles, runaway-work brakes, model routing, and workflow approval standard. That joined customer adoption and unit economics in one platform decision, including a reported $12 million annualized routing case and more than 250,000 annualized support hours—both preserved as modeled run rates, not booked savings.
 
 ## Six production blockers became one execution contract
 

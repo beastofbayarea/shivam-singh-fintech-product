@@ -4,7 +4,7 @@ I led two regulated cloud product turnarounds at Microsoft. I had identified tha
 
 The engagements occurred during my January 2020–August 2022 role. I joined them into one platform idea: **a workload should not enter a queue or cross a boundary until its urgency and jurisdiction have been resolved into executable policy.**
 
-I owned two executive turnarounds with different failure economics under that principle: recover a financial workload and help protect a $5 million contract that expanded to $7 million, then stop a $1 billion fintech's ten-market release until storage, access, keys, retention, exports, and recovery were locally executable. The product achievement was a reusable compiler for operational urgency and jurisdiction—not two bespoke escalations.
+Two executive turnarounds with different failure economics sat within my remit: recover a financial workload and help protect a $5 million contract that expanded to $7 million, then stop a $1 billion fintech's ten-market release until storage, access, keys, retention, exports, and recovery were locally executable. The product achievement was a reusable compiler for operational urgency and jurisdiction—not two bespoke escalations.
 
 ## Incident A: the queue had no concept of consequence
 
