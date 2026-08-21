@@ -20,6 +20,15 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 - [IMC trader-platform product strategy](./work-samples/imc-trader-platform-product-strategy.pptx) - trader workflow modernization, risk-aware prioritization, and delivery roadmap
 
+## Project interview stories
+
+Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+
+- [Institutional digital assets: custody and execution](./projects/institutional-digital-assets-custody-execution.md) - regulated custody, execution, and risk-aware product design
+- [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md) - inclusive underwriting and regional banking growth
+- [Real-time risk: capital release](./projects/real-time-risk-capital-release.md) - streaming risk decisions tied to capital efficiency
+- [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md) - payments infrastructure, merchant economics, and adoption
+
 ## Profile
 
 - Email: [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
