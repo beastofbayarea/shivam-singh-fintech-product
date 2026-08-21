@@ -2,6 +2,11 @@
 
 Role-targeted resume for payments, digital banking, real-time risk, RegTech, and regulated transaction infrastructure.
 
+## Profile
+
+- Email: [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
+- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
+
 ## Resume formats
 
 - [View the PDF](./shivam-singh-fintech-product.pdf)
@@ -55,7 +60,3 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md) - inclusive underwriting and regional banking growth
 
-## Profile
-
-- Email: [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
-- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
