@@ -1,61 +1,43 @@
-# Shivam Singh - FinTech Product Management
+# Shivam Singh — FinTech Product Management
 
-## Profile
+A financial product is a promise backed by an operating system. The customer sees a payment, credit decision, trade, workflow, or account. Underneath it, identity, permissions, liquidity, ledger truth, risk policy, evidence, and recovery must agree.
 
-Hi, I’m Shivam. I build financial products with a healthy respect for everything the customer never sees: identity, ledger integrity, permissions, liquidity, risk decisions, compliance, and the operational work required when something goes wrong.
+I build that hidden system as part of the product—not as control work added after the experience is designed.
 
-You can reach me at [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/beastofbayarea).
+[Resume](./shivam-singh-fintech-product.pdf) · [LinkedIn](https://www.linkedin.com/in/beastofbayarea) · [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
 
-## The product questions I keep coming back to
+## The six contracts behind trustworthy financial products
 
-Who is moving money or taking risk? What are they trying to accomplish? Which decisions need to happen in real time? Where must a person remain accountable? How do we make the controls feel like part of a trustworthy product rather than friction added afterward?
+### Permission to act
 
-I use those questions across payments, digital banking, credit, custody, risk infrastructure, and regulated automation.
+[Financial-services agents for regulated workflows](./projects/financial-services-agent-platform-regulated-workflows.md) established an authority chain from authentication and permitted evidence through consequence-based confirmation, execution, and trace. Six recurring blockers became one managed platform surface: knowledge, identity, tools, approval, observability, and cost. Comparable prototype-to-pilot work moved 40% faster; one lighthouse path fell from eight weeks to three days; grounded knowledge setup dropped to under five minutes. Model routing cut eligible routine-workflow cost by as much as 50%, while annual savings and support-capacity figures remained explicitly modeled.
 
-## Financial product projects
+The product question was never “Can the agent do it?” It was “Who allowed this action, against which evidence, with what limit, and how do we reverse or review it?”
 
-The projects below follow my career experience from newest to oldest. I’ve written each one as if we were discussing the product at a whiteboard: the user, the workflow, the controls, the trade-offs, the rollout, and the measures that matter. External sources inside every file ground the analysis.
+### Permission to release capital
 
-### Amazon Web Services (AWS)
+[The real-time risk gate](./projects/real-time-risk-capital-release.md) replaced fragmented retrospective checks with a common trade language, deterministic limits, explainable anomaly detection, degraded modes, and staged authority transfer. Risk-check latency moved from 90 milliseconds to 4.2 milliseconds, three-month shadow comparison reached roughly 98% agreement, false positives fell about 90%, and the system blocked $15 million of harmful exposure. The reported $85 million result is treated as internal risk or balance-sheet capacity, not mislabeled regulatory capital.
 
-**Principal Product Manager, Financial-Services Platforms** | July 2024 - Present
+### Permission to use assets without breaking custody
 
-#### [Financial-services agent platform: regulated workflows](./projects/financial-services-agent-platform-regulated-workflows.md)
+[Institutional digital-asset custody and execution](./projects/institutional-digital-assets-custody-execution.md) began with an observable client problem: assets left custody when clients needed to trade. I designed instant, bounded execution credit against segregated assets rather than pretending cold assets could move instantly. Across a ten-client pilot, access fell from as much as 24 hours to under one second, targeted competitor leakage approached zero, and comparable trading volume rose fivefold. Custody, credit, execution, liquidity, and surveillance remained separate control domains inside one proposition.
 
-I defined a managed execution layer that moved financial-services agents from prototypes into regulated production workflows. The product combined managed reasoning, integrated knowledge, permissioned actions, risk-tiered traces, circuit breakers, human approval, and cost-aware model routing while keeping accelerated adoption, modeled savings, and customer outcomes on their proper denominators.
+### Permission to scale a merchant relationship
 
-### Rakuten Group, Inc.
+[Payment-terminal hardware as a service](./projects/payment-terminal-haas-merchant-growth.md) reframed a ¥38,280 tax-inclusive terminal from a device sale into a merchant lifecycle. The journey—from application through first transaction, qualified use, retention, and expansion—gave Operations, Risk, Payments, and Growth shared states. Time to active fell from fourteen days to roughly 48 hours; 30-day activation reached 72%; six-month activity reached 81%; and subscriber payment volume was 40% higher than the one-time-buyer cohort. The 14-month payback and 3.2× LTV remained modeled rather than passed off as observed six-month value.
 
-**Product Manager, Merchant Economics - MBA Intern** | June 2023 - December 2023
+### Permission to operate across jurisdictions
 
-#### [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md)
+[The regulated FinTech cloud and sovereign-data platform](./projects/regulated-fintech-cloud-sovereign-data-platform.md) combined two pressures that are often handled separately: urgent workload performance and legal authority over data. I turned workload priority, jurisdiction rules, regional controls, audit evidence, and release approvals into a reusable “release compiler.” A critical query reached 480 milliseconds; a two-hour reporting job fell to ten minutes; ten planned markets launched with no recorded audit findings; and a $5 million at-risk contract expanded to $7 million. Hashing and locality supported the control design, but neither was treated as permission by itself.
 
-I reframed Rakuten's ¥38,280 tax-inclusive launch product from a one-time terminal sale into a zero-upfront merchant service. Payment volume, connectivity, automated standard KYC, usage controls, and cohort contribution created a lifecycle model around active merchants while separating observed pilot behavior from modeled LTV and payback.
+### Permission to grow exposure from evidence
 
-### Microsoft Corporation
+[The Southeast Asia neobank](./projects/southeast-asia-neobank-alternative-credit.md) was designed for a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior supported eligibility, a small first limit created an observable repayment path, and later exposure was earned through behavior rather than inferred entitlement. Embedded distribution and eKYC kept CAC below $10 against paid alternatives above $100. Approval rose from below 10% to above 40%, more than 100,000 active users were reported in 90 days, and early NPL was 2.4%, with seasoning limitations preserved.
 
-**Senior Product Manager, FinTech Cloud, Payments and Compliance** | January 2020 - August 2022
+## The portfolio-level product thesis
 
-#### [Regulated FinTech cloud: sovereign data platform](./projects/regulated-fintech-cloud-sovereign-data-platform.md)
+These products span agents, payments, credit, trading, risk, custody, cloud, and merchant services, but they share one architecture:
 
-I productized two linked regulated-cloud needs under the Microsoft FinTech role: a time-critical trading workload and a ten-market sovereignty launch. Workload priority, jurisdiction rules, regional data controls, and audit evidence became a reusable release pattern without conflating a six-hour reconciliation process with a 480-millisecond critical query.
+**identify the actor → define the permitted state → make the decision → execute atomically → preserve evidence → learn without silently expanding authority**
 
-### The D. E. Shaw Group
-
-**Vice President, Real-Time Risk** | July 2016 - December 2019
-
-#### [Institutional digital assets: custody and execution](./projects/institutional-digital-assets-custody-execution.md)
-
-I developed and piloted a custody-to-execution product strategy assigned to my D. E. Shaw experience. Instant credit against segregated assets, API sub-accounts, maker-taker pricing, fee credits, and risk limits targeted observable outflows; the project excludes post-role public-company figures embedded in the source material.
-
-#### [Real-time risk: capital release](./projects/real-time-risk-capital-release.md)
-
-I built a unified, streaming risk gate that governed each transaction at execution speed. A common trade model, deterministic limits, explainable anomaly detection, degraded-mode controls, and a three-month authority transfer replaced slow retrospective risk. The reported $85M is internal risk capital or balance-sheet capacity—not unsubstantiated Basel regulatory capital.
-
-### McKinsey & Company
-
-**Associate, Digital Banking and Product Strategy** | July 2014 - June 2016
-
-#### [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md)
-
-I led the alternative-credit product for a neobank serving a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior, fairness and fraud controls, graduated limits, eKYC, and embedded distribution expanded access; the 2016 Singapore sandbox is treated as methodology, not proof of program participation.
+I own the product choices that make that architecture useful: customer and workflow definition, roadmap priority, policy boundaries, real-time decision design, partner and platform interfaces, launch gates, cohort economics, and the evidence used to expand. Trust becomes a growth mechanism when the safe path is also the fastest understandable path.
