@@ -22,12 +22,16 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 ## Project interview stories
 
-Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+Each story adapts a portfolio project to this role narrative, with resume-ready impact, interview framing, decisions, metrics, and a link to the source page. The primary resume experience identifies the work-history anchor whose stated scope and evidence best support the story.
 
 - [Institutional digital assets: custody and execution](./projects/institutional-digital-assets-custody-execution.md) - regulated custody, execution, and risk-aware product design
+  - **Primary resume experience:** The D. E. Shaw Group - Vice President, Real-Time Risk (July 2016 - December 2019)
 - [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md) - inclusive underwriting and regional banking growth
+  - **Primary resume experience:** McKinsey & Company - Associate, Digital Banking and Product Strategy (July 2014 - June 2016)
 - [Real-time risk: capital release](./projects/real-time-risk-capital-release.md) - streaming risk decisions tied to capital efficiency
+  - **Primary resume experience:** The D. E. Shaw Group - Vice President, Real-Time Risk (July 2016 - December 2019)
 - [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md) - payments infrastructure, merchant economics, and adoption
+  - **Primary resume experience:** Rakuten Group, Inc. - Product Manager, Merchant Economics - MBA Intern (June 2023 - December 2023)
 
 ## Profile
 
