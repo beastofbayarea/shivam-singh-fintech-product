@@ -1,56 +1,29 @@
-# Southeast Asia Neobank — Telco-Based Credit Underwriting
+# Southeast Asia Neobank - Alternative Credit
 
-> **Portfolio lens:** Digital banking, alternative-data underwriting, eKYC, model fairness, embedded distribution, and portfolio risk.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public FinTech Product Management resume](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf) is used only to place this case within the McKinsey role dated July 2014-June 2016.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Helped launch a neobank for a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior, fairness and fraud controls, graduated limits, eKYC, and embedded super-app distribution expanded access without abandoning credit quality.
+The 2014 Global Findex documented remaining account-access gaps and the role of mobile technology. The 2016 PAFI report linked inclusion to transaction accounts, infrastructure, access, and adoption. FATF's 2013 guidance applied a risk-based approach to mobile and internet payment services. These sources support an alternative-credit product that joins inclusion, identification, payments utility, affordability, and proportionate controls.
 
-## Resume-ready impact
+## Case approach
 
-- Led a pivot from traditional underwriting to consented alternative-data scoring across more than 400 behavioral variables, increasing approval from below 10% to above 40%.
-- Worked through a regulatory sandbox to validate eKYC, explainability, fairness, privacy, fraud controls, and monthly drift monitoring.
-- Reached more than 100,000 active users in 90 days with CAC below $10 while maintaining a 2.4% non-performing-loan ratio.
+- Define the underserved segment and the financial need before selecting alternative data.
+- Use consented, relevant signals and test approval, affordability, error, and disparate outcomes.
+- Pair credit with transaction-account utility, payments, support, and complaint resolution.
+- Launch within bounded exposure, monitoring, safeguards, and regulatory review.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use active account use, approval quality, repayment, complaints, data errors, customer harm, acquisition cost, and control exceptions. These are proposed measures, not historical results.
 
-Traditional bureau checks rejected most thin-file users, paid acquisition was uneconomic, and regulators required credible identity, privacy, bias, and loss controls.
+## External source map
 
-### Task
-
-Design a digital-bank product that expanded financial inclusion while keeping acquisition and credit risk within explicit economic bounds.
-
-### Actions
-
-- Used long-term consistency and stability rather than wealth proxies, with sudden pre-application changes routed for review.
-- Received minimized derived signals instead of unnecessary raw personal data and required reversible user consent.
-- Started uncertain users with limited products and graduated limits as repayment history accumulated.
-- Embedded account discovery and signup inside telco, super-app, and commerce ecosystems.
-
-### Results
-
-- Approval increased from under 10% to over 40%.
-- The launch surpassed 100,000 active users in 90 days.
-- CAC remained below $10.
-- The portfolio held a 2.4% NPL ratio.
-
-## Decisions and trade-offs
-
-- Treat no credit history as a signal gap, not automatic non-creditworthiness.
-- Remove variables behaving as unfair income or protected-trait proxies.
-- Use graduated access to bound loss while the product learns from internal behavior.
-
-## Leadership signal
-
-Coordinated product, credit risk, regulators, identity teams, data science, telcos, and distribution partners around inclusion plus portfolio quality.
-
-## Skills and keywords
-
-digital banking · alternative credit · eKYC · credit risk · model fairness · regulatory sandbox · NPL · embedded finance · customer acquisition · fintech product
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2faf9e255f21808681cee73ed2339269)
-
+| Source | Contribution |
+|---|---|
+| [World Bank - Global Findex 2014 launch (2015)](https://www.worldbank.org/en/news/feature/2015/04/20/global-findex-2014-unveils-worlds-most-comprehensive-set-of-data-on-financial-inclusion) | Primary market evidence for access gaps, mobile accounts, and digital payments. |
+| [BIS and World Bank - Payment aspects of financial inclusion (2016)](https://www.bis.org/cpmi/publ/d144.htm) | Primary product and infrastructure framework for transaction-account inclusion. |
+| [FATF - Risk-based approach to mobile and internet payments (2013)](https://www.fatf-gafi.org/content/dam/fatf/documents/recommendations/Guidance-RBA-NPPS.pdf) | Primary AML/CFT risk-based control guidance. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf) | Work dates only. |

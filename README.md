@@ -2,6 +2,11 @@
 
 Role-targeted resume for payments, digital banking, real-time risk, RegTech, and regulated transaction infrastructure.
 
+## Profile
+
+- Email: [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
+- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
+
 ## Resume formats
 
 - [View the PDF](./shivam-singh-fintech-product.pdf)
@@ -22,13 +27,25 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 ## Project interview stories
 
-Stories are grouped by their primary resume experience in reverse chronological order. Each project includes resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
+Stories are grouped by their primary resume experience in reverse chronological order. Each file is an externally grounded interview case reconstruction: independent methodology, regulatory, and market sources support the content, while the resume is used only for work dates. The files do not claim independently verified engagement results.
+
+### Amazon Web Services (AWS)
+
+**Principal Product Manager, Financial-Services Platforms** | July 2024 - Present
+
+- [Financial-services agent platform: regulated workflows](./projects/financial-services-agent-platform-regulated-workflows.md) - permissioned agent actions, auditability, human approval, and production economics for regulated operations
 
 ### Rakuten Group, Inc.
 
 **Product Manager, Merchant Economics - MBA Intern** | June 2023 - December 2023
 
 - [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md) - payments infrastructure, merchant economics, and adoption
+
+### Microsoft Corporation
+
+**Senior Product Manager, FinTech Cloud, Payments and Compliance** | January 2020 - August 2022
+
+- [Regulated FinTech cloud: sovereign data platform](./projects/regulated-fintech-cloud-sovereign-data-platform.md) - financial-services product requirements, data residency, risk-workload performance, and multi-market compliance
 
 ### The D. E. Shaw Group
 
@@ -43,7 +60,3 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md) - inclusive underwriting and regional banking growth
 
-## Profile
-
-- Email: [shiv-fintech-product@umich.edu](mailto:shiv-fintech-product@umich.edu)
-- [LinkedIn](https://www.linkedin.com/in/beastofbayarea)

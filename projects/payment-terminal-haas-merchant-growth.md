@@ -1,60 +1,28 @@
-# Rakuten Pay Terminal — Hardware-as-a-Service & Merchant Growth
+# Payment Terminal HaaS - Merchant Growth
 
-> **Portfolio lens:** Payments product strategy, merchant economics, KYC automation, lifecycle activation, and transaction growth.
+> **Document type:** Externally grounded interview case reconstruction, not a claim of an independently verified completed engagement.
+>
+> **Timeline alignment:** The [public FinTech Product Management resume](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf) is used only to place this case within the Rakuten role dated June-December 2023.
 
-## Executive snapshot
+## Evidence-grounded premise
 
-Reframed a payment terminal from a one-time hardware sale into a zero-upfront merchant service. Payment volume, connectivity, automated standard KYC, usage controls, and recurring contribution created a lifecycle model around active merchants rather than devices shipped.
+The World Bank's Fast Payments Toolkit connects merchant acceptance to QR, APIs, authentication, consumer protection, fraud, interoperability, pricing, and dispute handling. PCI DSS 4.0 defines baseline technical and operational requirements for protecting payment-account data. These sources support terminal hardware-as-a-service as an end-to-end merchant operating product rather than device financing alone.
 
-## Resume-ready impact
+## Case approach
 
-- Designed a zero-upfront hardware-as-a-service model that removed a ¥60K merchant barrier and recovered the subsidy in 14 months.
-- Reduced time to active from 14 days to roughly 48 hours by automating standard KYC while preserving human review for low-confidence or mismatched cases.
-- Validated the model with 500 merchants: payment volume rose 40%, lifetime value increased 3.2x, 72% activated within 30 days, and 81% remained active after six months.
+- Segment merchants by payment mix, volume, support needs, connectivity, and risk.
+- Bundle device, software, onboarding, security, settlement, support, and replacement responsibilities.
+- Price against total merchant utility while preserving transparent fees and exit terms.
+- Pilot installation, payment success, fraud handling, support, and recovery before broad distribution.
 
-## Interview story
+## Evidence-based success measures
 
-### Situation
+Use active terminals, payment success, onboarding time, support demand, fraud, settlement exceptions, retention, and unit economics. These are proposed measures, not historical results.
 
-The terminal reduced merchant hardware clutter, but upfront price and paper-based KYC limited adoption. Sales, Finance, Operations, Engineering, and Compliance held different definitions of launch success.
+## External source map
 
-### Task
-
-Create a scalable payments proposition with bounded subsidy exposure, fast compliant activation, and durable transaction economics.
-
-### Actions
-
-- Modeled cumulative contribution from device subsidy, connectivity, and payment revenue.
-- Piloted automated provisioning with the first 50 merchants and the full lifecycle with 500 Osaka merchants.
-- Required minimum processing activity or device return/payment to reduce subsidy abuse.
-- Aligned teams around six-month active merchants and time to first successful transaction.
-
-### Results
-
-- Time to active fell to approximately 48 hours.
-- Thirty-day activation reached 72%, and six-month active rate reached 81%.
-- Subscriber payment volume was 40% higher than one-time buyers.
-- Lifetime value increased 3.2x, with device cost recovered in 14 months.
-
-## Decisions and trade-offs
-
-- Optimize active merchants and recurring contribution, not hardware units shipped.
-- Automate clear KYC cases and concentrate humans on ambiguity.
-- Tie the zero-upfront offer to real transaction activity.
-
-## Leadership signal
-
-Joined Payments, Sales, Finance, Compliance, Engineering, Mobile, and Operations around one lifecycle metric and a reversible merchant pilot.
-
-## Skills and keywords
-
-payments · merchant acquiring · hardware as a service · KYC · merchant activation · unit economics · LTV · payback · transaction volume · fintech product
-
-## Factual boundary
-
-The source treats six million merchant locations, ¥75B division revenue, and 35.7% division growth as company context, not terminal-attributable impact; this file uses pilot and lifecycle outcomes as the primary evidence.
-
-## Source
-
-[Original Notion project page](https://app.notion.com/p/2eff9e255f2180dbac1cf80c7ea3110e)
-
+| Source | Contribution |
+|---|---|
+| [World Bank - Fast Payments Toolkit (2021)](https://fastpayments.worldbank.org/sites/default/files/2021-11/Fast%20Payment%20Flagship_Final_Nov%201.pdf) | Primary merchant-payments, QR, interoperability, consumer-protection, and pricing framework. |
+| [PCI SSC - PCI DSS 4.0 release (2022)](https://www.pcisecuritystandards.org/about_us/press_releases/securing-the-future-of-payments-pci-ssc-publishes-pci-data-security-standard-v4-0/) | Primary payment-data security standard. |
+| [Public resume](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf) | Work dates only. |
