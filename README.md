@@ -24,6 +24,12 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 
 Stories are grouped by their primary resume experience in reverse chronological order. Each project includes resume-ready impact, interview framing, decisions, metrics, and a link to the source page.
 
+### Amazon Web Services (AWS)
+
+**Principal Product Manager, Financial-Services Platforms** | July 2024 - Present
+
+- [Financial-services agent platform: regulated workflows](./projects/financial-services-agent-platform-regulated-workflows.md) - permissioned agent actions, auditability, human approval, and production economics for regulated operations
+
 ### Rakuten Group, Inc.
 
 **Product Manager, Merchant Economics - MBA Intern** | June 2023 - December 2023
