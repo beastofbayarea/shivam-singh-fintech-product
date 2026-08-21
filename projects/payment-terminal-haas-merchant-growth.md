@@ -2,7 +2,7 @@
 
 A shipped device was not an activated merchant, and an activated merchant was not yet a profitable relationship.
 
-During my June–December 2023 Rakuten role, I led the merchant operating model for Rakuten Pay Terminal across merchants, sales, payments, finance, compliance, engineering, mobile, fulfillment, support, and product leadership.
+During my June–December 2023 Rakuten role, the merchant operating model for Rakuten Pay Terminal was my assignment across merchants, Sales, Payments, Finance, Compliance, Engineering, Mobile, Fulfillment, Support, and product leadership.
 
 Rakuten launched the terminal in July 2023 at ¥34,800 before tax / ¥38,280 including tax, with a zero-yen introduction campaign for qualifying new merchants. I corrected the retained internal ¥60,000 figure using the contemporaneous [official launch announcement](https://payment.rakuten.co.jp/news/2023072700/).
 
@@ -62,6 +62,6 @@ Cross-sell came only after the payment product worked. The terminal’s app surf
 
 Current company statements about tens of thousands of stores and later app expansion validate direction but postdate my project and are not my results.
 
-I owned the service proposition, P&L model, approval/value clocks, activity control, 50-to-500 learning sequence, lifecycle accountability, leading indicators, and scale criteria. Risk/compliance owned merchant decisions; payments owned acceptance; hardware/software owned reliability; finance owned contribution; sales/support owned interactions.
+The service proposition, cohort P&L, approval/value clocks, activity control, 50-to-500 learning sequence, lifecycle accountability, leading indicators, and scale criteria sat within my product remit. Risk/Compliance decided merchant approval; Payments controlled acceptance; Hardware/Software controlled reliability; Finance contribution; Sales/Support interaction.
 
 The change was conceptual and operational: stop managing hardware distribution and start managing a merchant cohort. Once sustained processing paid for the device, onboarding, connectivity, first value, support, retention, and future services became one product.

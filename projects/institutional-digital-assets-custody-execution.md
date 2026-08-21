@@ -4,7 +4,7 @@ The platform held assets safely and lost the highest-value moment.
 
 Wallet-flow analysis indicated that roughly 70% of targeted institutional outflows went to competitor execution venues. Clients trusted custody but could wait up to 24 hours to move a cold asset, so urgent trades and fees left the relationship.
 
-During my D. E. Shaw role, I led the product strategy across institutional clients, custody operations, trading, treasury, risk, compliance, engineering, sales, and finance. I converted the leak into a controlled bridge between two products that had to remain operationally distinct.
+During my D. E. Shaw role, I set the product strategy across institutional clients, Custody Operations, Trading, Treasury, Risk, Compliance, Engineering, Sales, and Finance. The leak became a controlled bridge between two products that still had to remain operationally distinct.
 
 ## The metric was client share of wallet, not market volume
 
@@ -65,6 +65,6 @@ The [CFTC’s 2017 virtual-currency primer](https://www.cftc.gov/PressRoom/Press
 
 The source also contains 2021 public-looking volume and revenue metrics that postdate my December 2019 departure and a McKinsey variation. I exclude them and present this as a product strategy/pilot, not ownership of a later public custody company.
 
-I owned the leakage diagnosis, share-of-wallet metric, economic backlog, pricing pilot, custody-to-credit proposition, API/sub-account requirements, commercial flywheel, and response to concentration risk. Custody, treasury, risk, compliance, engineering, and trading retained approval and operations. Licensing, legal entity, and client agreements remained separate launch gates.
+My scope covered leakage diagnosis, share-of-wallet measurement, the economic backlog, pricing pilot, custody-to-credit proposition, API/sub-account requirements, commercial flywheel, and concentration response. Custody, Treasury, Risk, Compliance, Engineering, and Trading retained approval/operations; licenses, legal entity, and agreements remained separate gates.
 
 The strategic product insight was that trust can create a moat and a trap. Custody retained the client only until the next urgent job; a governed credit bridge let the platform serve that moment without weakening the custody boundary that earned trust in the first place.

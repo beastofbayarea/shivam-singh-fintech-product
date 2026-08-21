@@ -2,7 +2,7 @@
 
 Financial institutions could build impressive agent demos, but production stopped where private data and real actions began. Review could add six to eight weeks because teams could not reconstruct what an agent had read, decided, called, changed, or cost.
 
-During my AWS role beginning in July 2024, I led the product contract for that gap across bank and insurer teams, risk/compliance, developers, platform/security, operations, sales, and users.
+Beginning in my July 2024 AWS role, I defined the product contract that closed this gap across bank/insurer teams, Risk/Compliance, developers, Platform/Security, Operations, Sales, and users.
 
 The product was not a more fluent model. It was a governed execution path:
 
@@ -69,6 +69,6 @@ The internal record reports up to 50% cost reduction on routine traffic, compare
 
 Before production, the owner had to show task completion, source accuracy, action validity, unauthorized-action rate, human intervention, recovery, latency and cost by tier, and evidence completeness. Conversation quality without an approved completed task was not adoption.
 
-I owned discovery, blocker synthesis, managed-default choice, consequence tiers, trace/action policy, routing proposition, beachheads, release standards, and business measurement. Customers retained control approval; applications authenticated users and defined permissions; workflow owners approved actions; engineering built and ran the platform.
+Discovery, blocker synthesis, the managed default, consequence tiers, trace/action policy, routing economics, beachheads, release standards, and measurement were my product decisions. Customers approved controls; applications authenticated users and defined permissions; workflow owners approved actions; Engineering ran the platform.
 
 Governance was not overhead around the agent. It was the product capability that let an institution grant useful authority at all.

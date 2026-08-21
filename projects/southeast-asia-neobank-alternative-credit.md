@@ -2,7 +2,7 @@
 
 Roughly 70% of the target group had little or no formal credit history, and bureau-led approval was below 10%. Rejecting them revealed missing data, not necessarily high risk. Approving them without bounded exposure would have been equally irresponsible.
 
-At McKinsey, I led the product design for a Southeast Asian digital-bank launch across customers, bank product/risk, data science, regulators, telco and identity partners, compliance, servicing, collections, and super-app/commerce channels.
+At McKinsey, I designed the product system for a Southeast Asian digital-bank launch across customers, bank Product/Risk, Data Science, regulators, telco/identity partners, Compliance, Servicing, Collections, and super-app/commerce channels.
 
 The product had to solve three models at once: eligibility, first exposure, and economic distribution.
 
@@ -61,6 +61,6 @@ The retained source calls it a “regulatory sandbox.” The Monetary Authority 
 
 The 2.4% NPL figure cannot validate lifetime risk within a 90-day launch; credit losses season, and NPL definitions vary. Sub-$10 CAC is meaningful only if it refers to an identity-complete, active customer—not free registration.
 
-I owned the product thesis, feature-governance system, thin-file/no-data journeys, graduated limits, partner economics, bounded release, scorecard, and stakeholder alignment. Data science estimated models; risk owned policy and limits; compliance/regulators owned approval; partners supplied data, identity, and distribution; servicing/collections owned outcomes.
+The thesis, feature-governance system, thin-file/no-data journeys, graduated limits, partner economics, bounded release, scorecard, and stakeholder settlement defined my product authority. Data Science estimated; Risk set policy/limits; Compliance/regulators approved; partners supplied data/identity/distribution; Servicing/Collections carried outcomes.
 
 This was not an alternative-data trick. It was a full inclusion product in which consented evidence established eligibility, a small exposure established trust, observed repayment expanded access, and embedded utility made the economics sustainable.

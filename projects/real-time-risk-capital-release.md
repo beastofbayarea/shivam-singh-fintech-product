@@ -4,7 +4,7 @@ The existing process could report risk after the fact but could not govern the n
 
 Key exposures aggregated overnight. A vendor check added roughly 90 milliseconds. An opaque fraud score sent 15% of trades to manual review. Bonds, derivatives, and digital assets used incompatible event and instrument records.
 
-At D. E. Shaw, I led the transfer of authority to an approximately $10 million internal platform. The product had to decide inside five milliseconds, explain its result, aggregate exposure across desks, and fail conservatively when dependencies broke. Trading, risk, compliance, quantitative teams, engineers, capital allocators, and senior investment leaders all had veto-relevant evidence.
+At D. E. Shaw, I directed the transfer of authority to an approximately $10 million internal platform. It had to decide inside five milliseconds, explain itself, aggregate cross-desk exposure, and fail conservatively. Trading, Risk, Compliance, Quant, Engineering, capital allocators, and investment leadership all held veto-relevant evidence.
 
 ## The irreversible product decision was the common trade language
 
@@ -54,6 +54,6 @@ When probabilistic services failed, hard exposure limits remained active, new ca
 | Capacity release | existing internal buffer → release evidence-supported capacity → $85M reported | Internal risk capital or balance-sheet capacity until finance methodology is recovered |
 | Platform cost | ~$10M build → create capacity and controls → retained comparison $85M / $15M | Not a simple 8.5× ROI without time, funding, operating cost, and overlap |
 
-I owned the product charter, ontology decision, model/rule boundary, latency and evidence budgets, shadow migration, degraded mode, scorecard, stakeholder alignment, and transfer gates. Quants retained models; risk/compliance owned policy; traders owned use; capital partners classified capacity; engineering implemented and operated.
+The charter, ontology, model/rule boundary, latency/evidence budgets, shadow migration, degraded mode, scorecard, stakeholder settlement, and authority gates were my responsibility. Quants retained models; Risk/Compliance set policy; traders controlled use; capital partners classified capacity; Engineering implemented and operated.
 
 The result was not simply faster risk. It was a governed transfer of decision authority: every desk could speak one exposure language, every block could be explained, and the system became most conservative at the moment its predictive dependencies became least reliable.

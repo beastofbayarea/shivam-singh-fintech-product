@@ -4,7 +4,7 @@ Two Microsoft turnarounds looked unrelated.
 
 One financial client’s urgent trade/risk queries were trapped behind routine reporting. Another fintech’s ten-market expansion assumed one US-hosted data plane could satisfy every jurisdiction.
 
-I led both during January 2020–August 2022 and extracted one reusable platform rule: **a workload should not enter a queue or cross a boundary until urgency, data class, jurisdiction, and consequence have resolved into executable policy.**
+I directed both turnarounds from January 2020–August 2022 and extracted one reusable platform rule: **a workload should not enter a queue or cross a boundary until urgency, data class, jurisdiction, and consequence have resolved into executable policy.**
 
 ## Case A — operational urgency
 
@@ -64,6 +64,6 @@ A critical query could bypass routine work without bypassing risk. A global prod
 | Sovereign launch | 10 planned markets → locally approved release → 10 launched with clean audits | “Clean” means no recorded findings, not perpetual compliance |
 | Downside | $25M planning scenario → remove exposure path before launch → path removed | Avoided-risk model, not realized savings |
 
-I owned the reusable constraint model, urgent-workload product, sovereignty audit, release pause, regional-pod specification, global/local operating system, executive trade-offs, and result definitions. Client legal/regulatory owners made legal determinations; regional teams approved local release; engineering implemented; security/privacy approved controls; auditors retained independent judgment.
+The reusable constraint model, urgent-workload product, sovereignty audit, release pause, regional-pod specification, global/local operating system, executive trade-offs, and result definitions were the pieces under my control. Client counsel/regulators determined law; regions approved release; Engineering implemented; Security/Privacy approved controls; auditors judged independently.
 
 The product achievement was not two escalations. It was a policy compiler that turned urgency and jurisdiction into runtime behavior, allowing speed and reuse only after the right authority had defined their boundaries.
