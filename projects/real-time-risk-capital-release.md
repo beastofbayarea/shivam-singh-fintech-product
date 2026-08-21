@@ -1,58 +1,54 @@
-# D. E. Shaw Real-Time Risk — Capital Release at Trading Speed
+# Moving Risk Decisions into the Trading Path
 
-## What I worked on
+I led this $10 million platform work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
 
-I completed this work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+The existing process calculated important exposures overnight. A vendor check added 90 milliseconds to time-sensitive transactions, opaque fraud scores sent 15% of trades to manual review, and each desk described instruments differently. The firm could report risk after the fact, but it could not apply one reliable capital and fraud decision at execution speed.
 
-I built a unified, streaming risk gate that governed each transaction at execution speed. A common trade model, deterministic capital checks, explainable fraud detection, degraded-mode controls, and a three-month shadow period replaced slow retrospective risk without rewriting proven quantitative libraries.
+I built the product around a demanding principle: faster risk had to be more explainable and resilient, not merely less restrictive.
 
-## At a glance
+## A common trade model came first
 
-- I led a $10M real-time risk platform that reduced transaction checks from 90 ms to 4.2 ms and false positives by roughly 90%.
-- I released $85M in regulatory capital and blocked $15M of harmful exposure through explainable, event-level capital and fraud controls.
-- I migrated asset classes through a common trade model and three-month shadow validation, achieving approximately 98% agreement with established risk outcomes before authority transfer.
+I normalized bonds, derivatives, and digital assets into one ontology for instruments, positions, counterparties, and events. This did not replace mature quantitative libraries. I kept those libraries behind adapters and replaced the fragmented data and execution layer around them.
 
-## The situation
+BCBS 239 provided the primary governance frame. Its emphasis on accurate, complete, timely, and adaptable risk data reinforced why a shared model was not just an architecture preference—it was a condition for consolidated, decision-grade exposure.
 
-Overnight calculations hid intraday exposure, a vendor check destroyed time-sensitive execution value, opaque fraud scores sent 15% of trades to manual review, and desk-specific data models prevented consolidated risk.
+## I split rules from judgment
 
-## What I needed to accomplish
+Deterministic regulatory capital calculations remained explicit. Probabilistic fraud detection added pattern recognition, but it also produced human-readable reasons and an escalation path. That separation allowed auditors and risk owners to see which decisions came from a rule, which came from a model, and which required a person.
 
-I needed to move risk from retrospective reporting into the transaction path while satisfying trading speed, capital accuracy, fraud detection, auditability, and continuity requirements.
+The Basel Committee's 2016 market-risk framework supplied contemporaneous context for expected shortfall, stress, and liquidity horizons. I translated those concepts into transaction-level gates and portfolio evidence rather than leaving them only in retrospective reports.
 
-## What I did
+## Three months of shadow traffic earned authority
 
-- I normalized bonds, derivatives, and digital assets into one trade ontology.
-- I kept mature quantitative libraries behind adapters while replacing the fragmented data and execution layer.
-- I combined deterministic regulatory calculations with probabilistic detection and human-readable reasons.
-- I mirrored live traffic for three months and retained hard exposure limits in degraded mode.
+I mirrored live transactions through the new platform for three months while the established process remained authoritative. The comparison covered latency, capital calculations, fraud outcomes, exposure limits, availability, and audit evidence.
 
-## The results
+Asset classes moved one at a time. The new path had to reach approximately 98% agreement with established risk outcomes, explain material differences, and pass resilience tests before receiving decision authority.
 
-- Latency fell from 90 ms to 4.2 ms.
-- False positives declined approximately 90%.
-- The system blocked $15M in harmful exposure and unlocked $85M in regulatory capital.
-- I risked outcomes matched the established process about 98% of the time during shadow validation.
+I also designed the degraded mode to fail tighter. If a probabilistic service or dependency became unavailable, hard exposure limits remained active. A failure could reduce trading flexibility; it could not silently turn into unrestricted bypass.
 
-## Decisions and trade-offs
+## The economic result came from better precision
 
-- I used phased replacement instead of a big-bang rewrite.
-- I treated explainability and the shared trade model as equal to raw latency.
-- I failed into tighter risk limits rather than unrestricted bypass.
+- Transaction checks fell from 90 milliseconds to 4.2 milliseconds.
+- False positives declined by roughly 90%.
+- The controls blocked $15 million in harmful exposure.
+- More precise, current risk evidence released $85 million in regulatory capital.
+- Shadow outcomes agreed with the established process about 98% of the time before transfer of authority.
 
-## How I led
+The capital release was not achieved by loosening risk. It came from a more timely and granular view of the exposure that was actually present.
 
-I aligned traders, quant researchers, compliance, risk, engineers, and capital partners around a single latency, accuracy, resilience, and capital-value scorecard.
+## How I kept the teams aligned
 
-## Why I chose this approach
+Traders, quant researchers, risk, compliance, engineering, and capital partners worked from one scorecard covering latency, accuracy, false positives, resilience, exposure blocked, and capital value. A speed improvement could not pass if it weakened control evidence, and a conservative model could not pass simply by blocking more trades.
 
-I used [Basel Committee - BCBS 239 (2013)](https://www.bis.org/publ/bcbs239.htm) to ground risk-data aggregation, governance, quality, and reporting principles. I used [Basel Committee - Revised market-risk framework (2016)](https://www.bis.org/press/p160114.htm) to ground contemporaneous market-risk, expected-shortfall, stress, and liquidity-horizon context.
+## My lasting product rule
 
-## Sources and external context
+When a control enters a real-time customer or trading path, explainability and failure behavior are product requirements. I design for the moment the model disagrees, a dependency disappears, or an auditor asks why—because that is when the platform earns authority.
 
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
+## External foundations
 
-| Source | How it informed my work | Timing |
-|---|---|---|
-| [Basel Committee - BCBS 239 (2013)](https://www.bis.org/publ/bcbs239.htm) | I used it to ground risk-data aggregation, governance, quality, and reporting principles. | — |
-| [Basel Committee - Revised market-risk framework (2016)](https://www.bis.org/press/p160114.htm) | I used it to ground contemporaneous market-risk, expected-shortfall, stress, and liquidity-horizon context. | — |
+These sources supplied the primary risk-data and market-risk methodology. My resume is linked only to establish employment chronology.
+
+| Source | How I applied it |
+|---|---|
+| [Basel Committee — Principles for effective risk data aggregation and risk reporting (BCBS 239, 2013)](https://www.bis.org/publ/bcbs239.htm) | I used its accuracy, completeness, timeliness, adaptability, and governance principles to design the shared risk model and evidence plane. |
+| [Basel Committee — Revised market-risk framework (2016)](https://www.bis.org/press/p160114.htm) | I used its expected-shortfall, stress, and liquidity-horizon context to frame transaction and portfolio gates. |

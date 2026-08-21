@@ -1,62 +1,51 @@
-# Institutional Digital Assets — Custody-to-Execution Transformation
+# Extending Digital-Asset Custody into Institutional Execution
 
-## What I worked on
+I did this work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
 
-I completed this work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+Institutions trusted the platform to hold assets, but they moved those assets to competing venues whenever they needed immediate liquidity. Roughly 70% of institutional outflows followed that pattern. The business retained the custody responsibility while competitors captured trading volume and economics.
 
-I redesigned a trusted custody product into a custody-to-execution flywheel. Instant credit against segregated assets, API sub-accounts, maker-taker pricing, fee credits, and risk limits brought execution activity back onto the platform without weakening custody controls.
+I set out to make custody the starting point of an execution relationship without weakening the controls that had earned institutional trust.
 
-## At a glance
+## The useful metric was share of wallet
 
-- I identified that roughly 70% of institutional asset outflows moved from custody to competitor execution venues and reframed the problem around share of wallet.
-- I tested lower pricing with ten high-churn institutions, increasing pilot volume 400% and reducing competitor outflows to near zero.
-- I reduced time to trade from up to 24 hours to under one second through collateralized credit against segregated assets and institutional execution APIs.
+Total crypto-market volume could rise enough to make almost any pilot look successful. I therefore measured how much of each institution's trading activity the platform captured and how much value still flowed to competitors.
 
-## The situation
+I converted sales requests into a blocked-revenue backlog. Instant access to liquidity, institutional APIs, and commercial pricing ranked above speculative feature expansion because they addressed observable outflow behavior.
 
-Institutions trusted custody but moved assets elsewhere when they needed immediate liquidity. The business retained custody risk while competitors captured trading economics, and retail-fee dependence left the model volatile.
+The CFTC's 2017 primer gave me the contemporaneous market and risk context for virtual currencies. NIST's blockchain overview provided the technical foundation for ledgers, keys, consensus, custody, and system limitations. I used both to keep the product conversation anchored in operational and market risk, not just trading demand.
 
-## What I needed to accomplish
+## A 30-day pilot tested the commercial mechanism
 
-I needed to create one governed product and commercial system spanning custody, liquidity, execution, pricing, and credit risk.
+I selected ten institutions with high churn and ran shadow pricing for 30 days. The cohort let me compare expected and observed share-of-wallet behavior before changing the broader pricing model.
 
-## What I did
+Lower maker-taker pricing and fee credits increased pilot volume 400%, while targeted competitor outflows fell close to zero. Because the measure was within-client share rather than market growth, the result gave me stronger evidence that the product and pricing bundle had changed behavior.
 
-- I converted sales feature requests into a blocked-revenue backlog and prioritized instant liquidity, APIs, and pricing over speculative expansion.
-- I ran a 30-day shadow-pricing pilot and measured share of wallet to isolate impact from broad crypto-market growth.
-- I designed instant trading credit against segregated custody assets.
-- I added volatility-based credit limits, risk pricing, and client eligibility after early concentration risk emerged.
+## Credit removed the 24-hour delay
 
-## The results
+Moving assets out of cold storage could take as long as 24 hours, which made the custody product unusable for time-sensitive execution. I designed instant trading credit against segregated custody assets, supported by API sub-accounts.
 
-- I piloted volume increased 400%, and targeted competitor outflows nearly disappeared.
-- Trading access fell below one second.
-- The custody and execution bundle created a stronger loyalty mechanism.
-- Broader company context later showed institutional volume becoming a majority share and services revenue expanding materially.
+The credit preserved asset segregation while reducing time to trade to under one second. When early use revealed concentration risk, I added client eligibility, volatility-sensitive limits, and risk-based pricing. The goal was not maximum volume; it was faster access inside a bounded balance-sheet exposure.
 
-## Decisions and trade-offs
+## What changed
 
-- I measured captured share of wallet rather than total market-volume growth.
-- I kept cold-storage security while extending controlled execution credit.
-- I scaled volume only with dynamic concentration and volatility controls.
+- Pilot trading volume increased 400%.
+- Targeted competitor outflows declined to almost zero.
+- Time to trade fell from as much as 24 hours to under one second.
+- The combined custody, liquidity, execution, and pricing proposition created a stronger retention mechanism.
 
-## How I led
+Broader company results later showed institutional activity and services revenue expanding, but I keep those figures separate from my direct evidence. The ten-client cohort, observed outflows, pilot volume, and access time are the measures I use for this work.
 
-I aligned product, sales, risk, institutional clients, and commercial leadership around one set of custody, execution, and balance-sheet economics.
+## My takeaway
 
-## A note on measurement
+A trusted product can still lose the most valuable part of the customer journey. I look for that handoff and ask whether the platform can extend into it without compromising the reason customers trusted the original product.
 
-I treat the ten-client test, 400% pilot growth, reduced competitor outflows, and sub-second access as the clearest direct evidence. I keep later institutional-volume share and services-revenue figures as broader company context unless they are separately substantiated.
+Here, the answer was not to blur custody and trading risk. It was to connect them through explicit collateral, eligibility, limits, pricing, and APIs—creating a custody-to-execution loop with controls visible to both the client and the risk team.
 
-## Why I chose this approach
+## External foundations
 
-I used [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) to ground contemporaneous market and risk context. I used [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations.
+The following sources supplied the primary contemporaneous market and technical context. The resume link establishes employment chronology only.
 
-## Sources and external context
-
-I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
-
-| Source | How it informed my work | Timing |
-|---|---|---|
-| [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) | I used it to ground contemporaneous market and risk context. | — |
-| [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) | I used it to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations. | — |
+| Source | How I applied it |
+|---|---|
+| [U.S. Commodity Futures Trading Commission — Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) | I used it to frame market structure, volatility, custody, and operational risk in the period of the work. |
+| [NIST — Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) | I used its treatment of ledgers, consensus, keys, and limitations to define the technical and control boundaries. |
