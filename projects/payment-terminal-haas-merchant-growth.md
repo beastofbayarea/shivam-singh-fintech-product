@@ -10,6 +10,8 @@ The all-in-one Android device combined card, contactless, electronic-money and Q
 
 The product question was therefore not whether to “give away a terminal.” It was whether a zero-upfront offer could produce an active, contribution-positive merchant relationship.
 
+I owned the merchant operating model from acquisition through six-month retention and subsidy recovery. I wrote the cohort P&L, defined the activation and qualification clocks, sequenced learning from 50 merchants to a 500-merchant pilot, aligned six teams on one lifecycle, and set the evidence required before a zero-yen hardware offer could become a scalable payments-and-services relationship.
+
 ## I wrote the cohort P&L before scaling the offer
 
 For each acquisition cohort, I modeled:
@@ -70,4 +72,3 @@ The shift was from shipping an object to operating a merchant. Once revenue depe
 - [Rakuten Payment — terminal project history](https://payment.rakuten.co.jp/en/recruitment/innovation-culture/rakuten-pay-terminal-project/) documents the device consolidation, field testing, Rakuten Mobile collaboration, later store scale, and app-platform direction.
 - [Rakuten Pay Terminal current product page](https://pay.rakuten.co.jp/business/service/terminal/) is used only for current product context because pricing, review times, and campaigns change.
 - [PCI DSS v4.0 release](https://www.pcisecuritystandards.org/about_us/press_releases/securing-the-future-of-payments-pci-ssc-publishes-pci-data-security-standard-v4-0/) supplied the payment-data control context.
-

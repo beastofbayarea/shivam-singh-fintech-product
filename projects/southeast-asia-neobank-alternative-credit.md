@@ -4,6 +4,8 @@ I led the alternative-credit product for a Southeast Asian digital bank launch d
 
 The work occurred from July 2014 to June 2016. Roughly 70% of the target group had little or no formal credit history, and bureau-led approval was below 10%. The product needed to solve three coupled models: **eligibility**, **first exposure**, and **economic distribution**.
 
+I owned that full inclusion product, not only the credit model: govern more than 400 candidate signals, create a safe no-data route, graduate exposure from observed repayment, embed acquisition in useful payment behavior, define the bounded release with regulators and control owners, and make approval, CAC, customer growth, and non-performing loans travel on one scorecard. The reported launch crossed 100,000 active customers while approval exceeded 40%, CAC stayed below $10, and NPLs were 2.4%—with each denominator caveat preserved below.
+
 ## Model one: eligibility without data overreach
 
 The underwriting design used more than 400 derived telco and behavioral variables. Quantity was not the point. Each candidate signal needed a permitted purpose, stability window, missing-value treatment, expected risk relationship, gaming test, fairness review, and correction owner.
@@ -69,4 +71,3 @@ I owned the product thesis, feature-governance requirements, thin-file and no-da
 The work was not a credit-model hack. It was a system in which consented evidence could establish eligibility, a small product could establish trust, and embedded distribution could make the economics work—without converting “financial inclusion” into a license to approve blindly.
 
 Period references: [World Bank Global Findex 2014 launch](https://www.worldbank.org/en/news/feature/2015/04/20/global-findex-2014-unveils-worlds-most-comprehensive-set-of-data-on-financial-inclusion), [CPMI–World Bank, *Payment aspects of financial inclusion*, April 2016](https://www.bis.org/cpmi/publ/d144.htm), [FATF risk-based guidance for mobile and internet payments, June 2013](https://www.fatf-gafi.org/content/dam/fatf-gafi/guidance/Guidance-RBA-NPPS.pdf.coredownload.pdf), and the [MAS sandbox consultation, June 2016](https://www.nas.gov.sg/archivesonline/data/pdfdoc/20160606006/Media%20release%20-%20Public%20Consultation%20on%20Sandbox%20Guidelines_FINAL.pdf).
-

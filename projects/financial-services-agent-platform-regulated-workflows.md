@@ -4,6 +4,8 @@ I led a product for financial institutions that needed software agents to do rea
 
 The work sits in my AWS role beginning in July 2024. Compliance review could add six to eight weeks when a team could not reconstruct what an agent had read, decided, called, or changed. The product brief therefore began at the point where the demo stopped.
 
+I owned the product contract that let institutions move from prototypes to governed work: the managed first mile, private-knowledge path, action tiers, identity context, trace profiles, runaway-work brakes, model routing, and workflow approval standard. That joined customer adoption and unit economics in one platform decision, including a reported $12 million annualized routing case and more than 250,000 annualized support hours—both preserved as modeled run rates, not booked savings.
+
 ## Six production blockers became one execution contract
 
 | Pilot stopped because… | Platform promise | Release evidence |
@@ -94,4 +96,3 @@ The product's strategic value was simple: governance was not overhead around the
 - [Amazon Bedrock Agents — trace events](https://docs.aws.amazon.com/bedrock/latest/userguide/trace-events.html)
 - [Amazon Bedrock Intelligent Prompt Routing](https://aws.amazon.com/bedrock/intelligent-prompt-routing/)
 - [NIST Generative AI Profile](https://doi.org/10.6028/NIST.AI.600-1) and [NIST Zero Trust Architecture](https://doi.org/10.6028/NIST.SP.800-207)
-

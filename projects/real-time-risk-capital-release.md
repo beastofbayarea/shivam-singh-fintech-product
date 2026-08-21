@@ -13,6 +13,8 @@ The work occurred from July 2016 to December 2019 with an internal build estimat
 
 The product had to make a decision inside five milliseconds, explain blocks, aggregate positions across desks, and remain conservative when a dependency failed. Speed was one acceptance criterion, not the mission.
 
+I owned the transfer of trading authority to a roughly $10 million internal platform: the common trade ontology, model-versus-rule boundary, five-millisecond budget, three-month shadow proof, degraded mode, and four release gates jointly accepted by Trading, Risk, Compliance, Engineering, and capital partners. The scale was not merely 4.2-millisecond latency; it was a governed system reported to block $15 million of harmful exposure and release $85 million of internal risk capacity.
+
 ## The common trade language was the irreversible decision
 
 I kept proven quantitative libraries behind adapters and standardized the layer around them:
@@ -72,4 +74,3 @@ The $15 million measure is the notional or exposure prevented by controls, not $
 I owned the product charter, common ontology, latency and evidence requirements, model-versus-rule boundary, shadow migration, degraded mode, stakeholder scorecard, and authority gates. Quants retained model ownership; traders owned execution use; Risk and Compliance owned limits and approvals; capital partners owned capacity classification; engineering owned implementation and reliability.
 
 Method references: [BCBS 239](https://www.bis.org/publ/bcbs239.htm) and the [Basel Framework scope](https://www.bis.org/basel_framework/) are used as benchmarks, not asserted obligations. [D. E. Shaw's public description](https://www.deshaw.com/) establishes the investment-management context that requires the capital terminology correction.
-

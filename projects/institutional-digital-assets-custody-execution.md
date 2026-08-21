@@ -8,6 +8,8 @@ This project is assigned to my D. E. Shaw role from July 2016 to December 2019. 
 
 Blockchain and wallet-flow analysis indicated that about 70% of targeted institutional outflows went to competitor execution venues. The client trusted the custody control but could wait as long as 24 hours for an asset movement from cold storage, so urgent trading activity and fees left the platform.
 
+I owned the strategy that turned that leakage into a new institutional product boundary: measure client-level share of wallet, rank the economic backlog, prove price and routing demand with ten high-churn institutions, design immediate trading credit against controlled assets, and force custody, Treasury, Risk, Compliance, execution, and settlement to agree where authority changed hands. The pilot moved access from up to 24 hours to under a second and trading volume to five times baseline without relabeling credit as custody movement.
+
 Total crypto volume was a poor measure because a rising market could lift every venue. I chose **share of each client's observable execution wallet**:
 
 `execution volume captured on proposed service ÷ total observable execution volume for that client`
@@ -74,4 +76,3 @@ I owned the outflow diagnosis, economic backlog, pilot design, custody-to-credit
 The strategic lesson is not that custody should become an exchange. It is that a trusted product can lose the customer's highest-value moment unless it offers a governed bridge to the next job.
 
 Relevant period sources: [CFTC LabCFTC Virtual Currency Primer, October 2017](https://www.cftc.gov/PressRoom/PressReleases/7631-17), [NIST IR 8202, *Blockchain Technology Overview*](https://doi.org/10.6028/NIST.IR.8202), and [D. E. Shaw's description of its investment and technology business](https://www.deshaw.com/what-we-do).
-
