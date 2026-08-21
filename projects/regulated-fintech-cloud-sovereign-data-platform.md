@@ -1,52 +1,80 @@
-# Productizing Performance and Sovereignty for Regulated FinTech Workloads
+# Compiling Urgency and Jurisdiction into a Regulated Cloud Release
 
-I did this work during my [Microsoft experience from January 2020 to August 2022](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+I led two regulated cloud product turnarounds at Microsoft. I had identified that one financial client could not separate urgent trading work from routine reporting, while another could not separate global product consistency from local control of customer data. I worked with traders and analysts, client technology leaders, legal and regulatory teams, security and privacy owners, regional operators, cloud engineering, finance, and executive sponsors.
 
-Two financial-services customer situations exposed the same product gap from different directions. One trading workload treated a critical execution query and routine reporting as equal queue traffic, producing six-hour reconciliation. Another customer planned to route regulated European and Chinese data through a U.S.-hosted monolith, creating an estimated $25 million in regulatory exposure.
+The engagements occurred during my January 2020–August 2022 role. I joined them into one platform idea: **a workload should not enter a queue or cross a boundary until its urgency and jurisdiction have been resolved into executable policy.**
 
-I used those situations to define a reusable deployment pattern in which performance objectives and jurisdiction rules were first-class product configuration—not late customer exceptions.
+## Incident A: the queue had no concept of consequence
 
-## The trading workload established the performance pattern
+The source notes compress a six-hour reconciliation problem and a sub-500-millisecond critical-query target into one headline. Those are not the same operation, so I separate them.
 
-I separated critical trade and risk work into preemptive fast lanes and moved reporting to an independent serverless path. Each class received an explicit service-level objective, capacity policy, monitoring view, and failure response.
+Critical trade and risk queries were competing with large reporting scans in a first-in, first-out path. I created preemptive fast lanes with a 500-millisecond service objective, partitioned work on TradeID and InstrumentID to keep joins local, and isolated reporting on a serverless, columnar path. Reporting used 60-second micro-batches, Parquet, aligned UTF-8 processing, and targeted statistics to reduce plan and compute waste.
 
-This removed the assumption that all requests deserved identical scheduling. Critical-query latency reached 480 milliseconds. Reporting time fell from two hours to ten minutes, reporting CPU declined about 40%, and the system supported 500 concurrent analysts. The cloud contract was retained and expanded from $5 million to $7 million.
+The critical query reached 480 milliseconds—20 milliseconds inside the objective. Reporting moved from two hours to ten minutes, a 91.7% reduction; reporting CPU fell about 40%; and the system supported 500 concurrent analysts.
 
-The lesson was reusable: workload criticality had to shape queueing, capacity, observability, and recovery.
+The source's six-hour number is best retained as the original end-to-end reconciliation pain, not converted into a misleading “six hours to 480 milliseconds” comparison.
 
-## The ten-market launch established the sovereignty pattern
+The customer renewed a $5 million contract and expanded it to $7 million: $5 million retained plus $2 million of expansion. Contract value is a commercial outcome involving the overall relationship; the performance work was a material retention driver, not necessarily its sole cause.
 
-I paused the centralized design when the data movement proved legally unsafe. For each jurisdiction, I defined requirements for compute, storage, encryption, consent, retention, administrative access, audit evidence, and approved cross-border use.
+## Incident B: one global data plane had become a legal assumption
 
-I then productized those requirements into regional deployment pods with automated controls. Write-once-read-many retention, customer-managed HSM keys, and row-level cross-border permission checks became reusable capabilities. Cross-region reporting received only approved, de-identified signals, preserving a global risk view without exporting identity data.
+A $1 billion fintech planned to serve ten markets from a U.S.-hosted monolith. The design treated storage location, administrator access, encryption keys, retention, consent, and reporting exports as implementation details.
 
-NIST SP 800-53 Revision 5 provided the primary control catalogue across security, privacy, accountability, contingency, and supply-chain risk. NIST's Zero Trust Architecture reinforced the per-resource access model: jurisdiction, identity, device, policy, and requested data all mattered more than whether a request originated inside a familiar network.
+During the role period, the relevant landscape included GDPR and the 2020 *Schrems II* transfer ruling in Europe and China's 2021 Personal Information Protection Law. PIPL allows serious-case fines up to RMB50 million or 5% of prior-year turnover, plus possible business suspension. The retained $25 million “exposure” was therefore a planning estimate, not a statutory fine incurred or a universal maximum.
 
-## Standardization stopped at the policy boundary
+I paused the global release and turned the jurisdiction review into a deployable pod specification.
 
-I standardized the deployment machinery, evidence package, control implementation, and launch process. I did not pretend that ten jurisdictions had one policy. Each regional pod carried local configuration and had to pass its own legal and operational gate.
+## One blueprint, locally resolved controls
 
-That division reduced repeated engineering while keeping responsibility where it belonged. Global teams gained consistent observability; regional and regulatory owners retained control over data and policy.
+Each pod carried explicit values for:
 
-## The combined outcome
+`compute region | storage region | identity authority | privileged support path | encryption/key custody | permitted purposes | retention | export class | evidence owner | recovery boundary`
 
-- Critical trading-query latency reached 480 milliseconds.
-- Reporting fell to ten minutes and supported 500 concurrent analysts.
-- Reporting CPU declined approximately 40%.
-- All ten sovereign deployments launched with clean audits.
-- The renewed customer contract expanded to $7 million.
+The mechanism was standardized: infrastructure modules, policy checks, audit schema, deployment gates, and global observability. The policy values were not. Regional legal, privacy, and operating owners approved their own configuration.
 
-## Why I connect these two situations
+For China, Microsoft Azure operated by 21Vianet is a physically separate instance operated and transacted by the local partner, with service-parity and commercial differences. That justified a genuinely separate deployment plan, not a region flag on the public-cloud tenant.
 
-Both were solved by making a constraint configurable and observable. In the first, the constraint was workload criticality. In the second, it was jurisdiction. Once those constraints became explicit product inputs, the platform could automate the common path while enforcing the right boundary for each workload.
+For European data, customer-managed keys and access policy reduced platform control but did not erase transfer law. For U.S. regulated records, write-once/read-many retention supported then-current SEC electronic-recordkeeping expectations; current SEC rules also permit an audit-trail alternative, so WORM should not be described as the only modern design.
 
-That is how I approach regulated platform products: standardize the mechanism, preserve policy-specific decisions, and make the evidence package part of the release.
+## Hashing was not anonymization
 
-## External foundations
+The initial cross-region design proposed hashing identifiers with a local salt and exporting global risk signals. Under GDPR, pseudonymized data that can be reattributed with additional information remains personal data.
 
-These sources supplied the primary security, privacy, and access-control methodology. My resume establishes employment chronology only.
+I therefore required the export decision to test purpose, necessity, aggregation, reidentification risk, consent or other lawful basis, and receiving-region access. Row-level policy checked whether a record could contribute to an export. Where global risk did not need person-level resolution, the pod emitted aggregated, de-identified features rather than durable customer hashes.
 
-| Source | How I applied it |
-|---|---|
-| [NIST — SP 800-53 Revision 5 (2020)](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | I used its security, privacy, accountability, contingency, and supply-chain controls to define reusable regional deployment gates. |
-| [NIST — Zero Trust Architecture (2020)](https://doi.org/10.6028/NIST.SP.800-207) | I used its per-resource, policy-based access model for jurisdiction-aware data and administrative controls. |
+This is a stronger and more credible claim than “we hashed the ID, so it could cross the border.”
+
+## The release compiler
+
+Both incidents used the same product sequence:
+
+1. classify the request by urgency, data class, jurisdiction, and consequence;
+2. resolve the applicable queue, region, access, retention, and evidence policy;
+3. deploy the standardized mechanism with local values;
+4. observe the service objective and policy decision separately;
+5. fail into a defined lane rather than silently fall back to the global default.
+
+That pattern let a critical query bypass routine work without bypassing risk, and let a global product reuse engineering without overriding local authority.
+
+## What went on the executive scorecard
+
+| Dimension | Baseline | Result | Evidence boundary |
+|---|---:|---:|---|
+| critical query | target <500 ms; prior comparable latency not retained | 480 ms | production workload percentile not retained |
+| reporting | 2 hours | 10 minutes | defined reporting job; 91.7% reduction |
+| reporting compute | baseline CPU | ~40% lower | reporting path only |
+| concurrency | prior capacity not retained | 500 analysts | supported test/operating level, not necessarily simultaneous peak forever |
+| client contract | $5M at risk | $7M renewed/expanded | $5M retention + $2M expansion; multi-factor outcome |
+| sovereign launch | 10 planned markets | 10 launched with clean audits | “clean” means no reported findings in retained record, not perpetual compliance |
+| regulatory downside | $25M planning estimate | exposure path removed before launch | avoided-risk model, not realized saving or fine |
+
+I owned the constraint model, workload-priority product, sovereignty audit, release pause, regional-pod requirements, global-versus-local operating model, executive alignment, and success measures. Client legal and regulatory owners made legal determinations; regional teams approved local release; engineers implemented scheduling and pods; security and privacy teams approved controls; auditors retained independent judgment.
+
+### External controls used
+
+- [Microsoft — Azure in China](https://learn.microsoft.com/en-us/azure/china/) and [Azure operated by 21Vianet](https://learn.microsoft.com/zh-tw/azure/china/overview-operations)
+- [EUR-Lex — GDPR definitions, including pseudonymisation](https://eur-lex.europa.eu/legal-content/EN-ES/TXT/?from=EN&uri=CELEX%3A32016R0679)
+- [China PIPL — penalties](https://en.spp.gov.cn/2021-12/29/c_948419_3.htm)
+- [SEC — electronic recordkeeping amendments](https://www.sec.gov/investment/amendments-electronic-recordkeeping-requirements-broker-dealers)
+- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
+
