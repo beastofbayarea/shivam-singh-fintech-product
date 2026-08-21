@@ -1,54 +1,75 @@
-# Moving Risk Decisions into the Trading Path
+# Transferring Decision Authority to a Millisecond Risk Gate
 
-I led this $10 million platform work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+I led a real-time trading-risk platform at D. E. Shaw. I had identified that desks could not use one timely view of positions, limits, and suspicious activity because mature models sat behind slow vendor checks and incompatible trade records. I worked with traders, quantitative researchers, risk and compliance teams, capital allocators, data and platform engineers, and senior investment leaders.
 
-The existing process calculated important exposures overnight. A vendor check added 90 milliseconds to time-sensitive transactions, opaque fraud scores sent 15% of trades to manual review, and each desk described instruments differently. The firm could report risk after the fact, but it could not apply one reliable capital and fraud decision at execution speed.
+The work occurred from July 2016 to December 2019 with an internal build estimate of about $10 million. An important terminology correction comes first: D. E. Shaw is an investment manager, not a bank. Basel regulatory capital rules and BCBS 239 were useful design benchmarks, but the source does not establish that the reported $85 million was bank regulatory capital. I call it **internal risk capital or balance-sheet capacity released** unless the original finance record proves otherwise.
 
-I built the product around a demanding principle: faster risk had to be more explainable and resilient, not merely less restrictive.
+## The old path could report risk but not govern the next trade
 
-## A common trade model came first
+- key exposures were aggregated overnight;
+- a vendor check added about 90 milliseconds to a time-sensitive path;
+- an opaque fraud score sent 15% of trades to manual review;
+- bonds, derivatives, and digital assets used different instrument and event representations.
 
-I normalized bonds, derivatives, and digital assets into one ontology for instruments, positions, counterparties, and events. This did not replace mature quantitative libraries. I kept those libraries behind adapters and replaced the fragmented data and execution layer around them.
+The product had to make a decision inside five milliseconds, explain blocks, aggregate positions across desks, and remain conservative when a dependency failed. Speed was one acceptance criterion, not the mission.
 
-BCBS 239 provided the primary governance frame. Its emphasis on accurate, complete, timely, and adaptable risk data reinforced why a shared model was not just an architecture preference—it was a condition for consolidated, decision-grade exposure.
+## The common trade language was the irreversible decision
 
-## I split rules from judgment
+I kept proven quantitative libraries behind adapters and standardized the layer around them:
 
-Deterministic regulatory capital calculations remained explicit. Probabilistic fraud detection added pattern recognition, but it also produced human-readable reasons and an escalation path. That separation allowed auditors and risk owners to see which decisions came from a rule, which came from a model, and which required a person.
+`instrument | legal entity | book | counterparty | position effect | cash flow | market factor | collateral | lifecycle event | timestamp | source`
 
-The Basel Committee's 2016 market-risk framework supplied contemporaneous context for expected shortfall, stress, and liquidity horizons. I translated those concepts into transaction-level gates and portfolio evidence rather than leaving them only in retrospective reports.
+A bond, derivative, or digital asset did not become economically identical; each mapped its own terms into shared exposure and event concepts. That allowed portfolio aggregation while preserving asset-specific models.
 
-## Three months of shadow traffic earned authority
+BCBS 239 emphasizes accurate, complete, timely, and adaptable risk data for banks, especially systemically important banks. We were not claiming its formal scope. I used it as a demanding benchmark for ownership, lineage, reconciliation, timeliness, and consolidated exposure.
 
-I mirrored live transactions through the new platform for three months while the established process remained authoritative. The comparison covered latency, capital calculations, fraud outcomes, exposure limits, availability, and audit evidence.
+## I split deterministic authority from probabilistic suspicion
 
-Asset classes moved one at a time. The new path had to reach approximately 98% agreement with established risk outcomes, explain material differences, and pass resilience tests before receiving decision authority.
+The gate ran two kinds of logic:
 
-I also designed the degraded mode to fail tighter. If a probabilistic service or dependency became unavailable, hard exposure limits remained active. A failure could reduce trading flexibility; it could not silently turn into unrestricted bypass.
+**Hard checks:** counterparty, position, concentration, market, credit, collateral, and capital limits. These produced deterministic approve, limit, or block outcomes from versioned policy.
 
-## The economic result came from better precision
+**Fraud/anomaly checks:** probabilistic patterns produced a score, reason features, and escalation. The model could increase scrutiny; policy defined when a person or hard stop was required.
 
-- Transaction checks fell from 90 milliseconds to 4.2 milliseconds.
-- False positives declined by roughly 90%.
-- The controls blocked $15 million in harmful exposure.
-- More precise, current risk evidence released $85 million in regulatory capital.
-- Shadow outcomes agreed with the established process about 98% of the time before transfer of authority.
+Every decision record identified input versions, model/rule version, result, reason, latency, and final disposition. This made a false positive diagnosable and kept auditors from receiving a post-hoc story generated by the same model.
 
-The capital release was not achieved by loosening risk. It came from a more timely and granular view of the exposure that was actually present.
+## The five-millisecond budget
 
-## How I kept the teams aligned
+The target was <5 milliseconds. The observed path reached 4.2 milliseconds, leaving 0.8 milliseconds or 16% headroom against the target. The 90→4.2 millisecond change was 95.3% lower latency and about 21.4× faster.
 
-Traders, quant researchers, risk, compliance, engineering, and capital partners worked from one scorecard covering latency, accuracy, false positives, resilience, exposure blocked, and capital value. A speed improvement could not pass if it weakened control evidence, and a conservative model could not pass simply by blocking more trades.
+The retained record does not state percentile, hardware boundary, network hops, or whether the 90ms vendor time and 4.2ms platform time covered identical checks. I use it as observed end-to-end gate evidence, not a portable benchmark for every asset class.
 
-## My lasting product rule
+## Authority moved in four gates
 
-When a control enters a real-time customer or trading path, explainability and failure behavior are product requirements. I design for the moment the model disagrees, a dependency disappears, or an auditor asks why—because that is when the platform earns authority.
+For three months, mirrored production traffic entered the new platform while the established process remained authoritative.
 
-## External foundations
+1. **Semantic agreement:** common records reconciled to desk positions and events.
+2. **Decision agreement:** outputs matched about 98%; every material difference was classified.
+3. **Resilience:** dependency failure, stale market data, replay, duplicate, backlog, and recovery were exercised.
+4. **Controlled cutover:** one asset class and limit family received authority at a time, with rollback.
 
-These sources supplied the primary risk-data and market-risk methodology. My resume is linked only to establish employment chronology.
+Ninety-eight percent agreement was not itself enough. A 2% difference in low-value classifications is different from a single missed concentration breach. Transfer required no unexplained material difference in decisions affecting capital or compliance.
 
-| Source | How I applied it |
-|---|---|
-| [Basel Committee — Principles for effective risk data aggregation and risk reporting (BCBS 239, 2013)](https://www.bis.org/publ/bcbs239.htm) | I used its accuracy, completeness, timeliness, adaptability, and governance principles to design the shared risk model and evidence plane. |
-| [Basel Committee — Revised market-risk framework (2016)](https://www.bis.org/press/p160114.htm) | I used its expected-shortfall, stress, and liquidity-horizon context to frame transaction and portfolio gates. |
+## Failure made the system tighter
+
+If the probabilistic service or another dependency became unavailable, hard position and exposure limits remained active, new capacity contracted, delayed checks continued, and suspicious states could freeze further activity. The platform could reduce trading flexibility; it could not silently fail open.
+
+That degraded mode was a product requirement because a real-time gate becomes most consequential during volatility—the same moment infrastructure and market data are under stress.
+
+## The economic record
+
+| Measure | Baseline | Result | What it means |
+|---|---:|---:|---|
+| risk-check latency | 90 ms | 4.2 ms | 95.3% reduction; test boundary incomplete |
+| manual review | 15% of trades | final rate not retained; false positives ~90% lower | cannot infer 1.5% review without knowing true-positive share and routing |
+| decision agreement | established process | ~98% | three-month shadow; material differences separately resolved |
+| harmful exposure | none attributed to new gate | $15M blocked | exposure prevented, not necessarily realized loss avoided |
+| capital/capacity | existing internal buffer | $85M released | reported internal risk capital or balance-sheet capacity, not proven Basel regulatory capital |
+| platform investment | ~$10M | compared with $85M capacity and risk reduction | not a simple 8.5× ROI without funding cost, duration, and operating expense |
+
+The $15 million measure is the notional or exposure prevented by controls, not $15 million of certain loss. The $85 million release should be tied to its finance methodology—margin, internal risk allocation, liquidity buffer, or another category—before an external interview uses a more specific label.
+
+I owned the product charter, common ontology, latency and evidence requirements, model-versus-rule boundary, shadow migration, degraded mode, stakeholder scorecard, and authority gates. Quants retained model ownership; traders owned execution use; Risk and Compliance owned limits and approvals; capital partners owned capacity classification; engineering owned implementation and reliability.
+
+Method references: [BCBS 239](https://www.bis.org/publ/bcbs239.htm) and the [Basel Framework scope](https://www.bis.org/basel_framework/) are used as benchmarks, not asserted obligations. [D. E. Shaw's public description](https://www.deshaw.com/) establishes the investment-management context that requires the capital terminology correction.
+
