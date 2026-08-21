@@ -1,5 +1,15 @@
 # Shivam Singh — FinTech Product Management
 
+## Tell me about yourself
+
+**Q: Tell me about yourself / walk me through your background.**
+
+**A:** I am a FinTech product leader who builds the infrastructure and customer experiences behind trusted financial decisions. I started at McKinsey in digital banking and product strategy, including alternative-credit and market-entry work for customers without conventional credit histories. That experience taught me to connect access and growth to consent, fraud, loss limits, regulatory sequencing, and unit economics from the beginning.
+
+At D. E. Shaw, I worked on institutional products where speed and control had to coexist: real-time risk, digital-asset custody, execution, liquidity, and capital allocation. At Microsoft, I led FinTech cloud, payments, and compliance products, including workloads that combined sub-second operational requirements with market-by-market sovereignty and audit rules. During my MBA role at Rakuten, I reframed a payment terminal from a hardware sale into a merchant lifecycle product with activation, retention, payment-volume, and payback economics. At AWS, I have focused on financial-services platforms, including regulated agent workflows with identity, permissioned data and tools, human approval, traceability, and economic routing.
+
+My background has progressed from market and credit strategy to real-time financial infrastructure and then to regulated automation at platform scale. I am strongest when the visible customer experience depends on difficult underlying decisions about authority, ledger truth, risk, liquidity, jurisdiction, or recovery. I own the product strategy and economic model while making the control path understandable enough to become a source of customer trust rather than friction.
+
 A financial product is a promise backed by an operating system. The customer sees a payment, credit decision, trade, workflow, or account. Underneath it, identity, permissions, liquidity, ledger truth, risk policy, evidence, and recovery must agree.
 
 I build that hidden system as part of the product—not as control work added after the experience is designed.
