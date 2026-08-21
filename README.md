@@ -36,6 +36,12 @@ Stories are grouped by their primary resume experience in reverse chronological 
 
 - [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md) - payments infrastructure, merchant economics, and adoption
 
+### Microsoft Corporation
+
+**Senior Product Manager, FinTech Cloud, Payments and Compliance** | January 2020 - August 2022
+
+- [Regulated FinTech cloud: sovereign data platform](./projects/regulated-fintech-cloud-sovereign-data-platform.md) - financial-services product requirements, data residency, risk-workload performance, and multi-market compliance
+
 ### The D. E. Shaw Group
 
 **Vice President, Real-Time Risk** | July 2016 - December 2019
