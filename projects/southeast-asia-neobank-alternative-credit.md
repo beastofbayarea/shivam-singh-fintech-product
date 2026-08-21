@@ -1,52 +1,72 @@
-# Building Credit Access for Customers Without Bureau Histories
+# Extending Credit Without Treating a Thin File as a Bad Customer
 
-I worked on this Southeast Asian neobank during my [McKinsey experience from July 2014 to June 2016](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+I led the alternative-credit product for a Southeast Asian digital bank launch during my McKinsey role. I had identified that people without bureau histories were being rejected before the bank could observe whether they could repay, while customers and regulators needed limits on how mobile behavior affected a financial decision. I worked with prospective customers, bank product and risk leaders, data scientists, regulators, telco and identity partners, Compliance, servicing and collections teams, and super-app and commerce channels.
 
-Roughly 70% of the target population lacked a formal credit history. Traditional bureau-led underwriting therefore approved fewer than 10% of applicants. Paid acquisition was also uneconomic, and regulators reasonably expected a credible approach to identity, privacy, fraud, explanation, and portfolio loss.
+The work occurred from July 2014 to June 2016. Roughly 70% of the target group had little or no formal credit history, and bureau-led approval was below 10%. The product needed to solve three coupled models: **eligibility**, **first exposure**, and **economic distribution**.
 
-I treated the absence of a bureau file as a missing signal—not proof that the customer was uncreditworthy.
+## Model one: eligibility without data overreach
 
-## I designed the data boundary before the score
+The underwriting design used more than 400 derived telco and behavioral variables. Quantity was not the point. Each candidate signal needed a permitted purpose, stability window, missing-value treatment, expected risk relationship, gaming test, fairness review, and correction owner.
 
-The product used consented telco behavior across more than 400 derived variables. I focused on long-term consistency and stability, not wealth proxies. Sudden behavior changes immediately before an application were routed for review because they could indicate manipulation or fraud.
+Useful classes included account tenure, top-up regularity, and long-run usage stability. I excluded or challenged device price, fine-grained location, and raw wealth-like measures when they operated as social or income proxies without enough incremental risk value. A sudden behavior spike immediately before an application triggered review rather than reward.
 
-I minimized the data entering the underwriting system. The product received the derived signals needed for the decision rather than unnecessary raw personal records, and consent remained reversible.
+The bank received derived features rather than unnecessary raw communication content or movement history. Consent was explicit and reversible; revocation stopped future use, while legal and audit requirements governed records already used for a decision.
 
-The World Bank's 2014 Global Findex provided the market foundation for access gaps, mobile accounts, and digital payments. FATF's risk-based guidance for mobile and internet payments influenced the control design: identity and monitoring effort should respond to observed risk rather than make every user pass the maximum-friction path.
+No bureau hit became “insufficient evidence,” not “bad credit.” The model produced reasons for approve, decline, or limited entry so Risk and a customer-support path could inspect the decision.
 
-## Approval and fairness were reviewed together
+## Model two: earn a larger limit from observed repayment
 
-I tested whether variables behaved as hidden income or protected-trait proxies and removed those that created unfair separation without a defensible risk relationship. The score produced explanations that could support review and customer communication.
+A high score based on alternative data did not justify an immediately large unsecured exposure. I defined a graduated product:
 
-Uncertain applicants were not forced into a binary full-credit-or-rejection choice. I started them with a limited product and graduated limits as repayment evidence accumulated. That bounded the first-loss exposure while allowing the platform to learn from the customer's own behavior.
+`limited account/payment access → small first credit limit → observe repayment and fraud → raise, hold, or reduce limit`
 
-## Distribution was embedded in an existing habit
+About 15% of users lacked enough telco history and entered through a 30–60 day internal-observation path before reassessment. That created an inclusion route for the no-data customer while bounding first loss.
 
-Acquiring each customer through paid media would have broken the unit economics. I placed discovery and signup inside telco, super-app, and commerce ecosystems where the target customer already completed frequent tasks.
+The decision policy monitored approval and loss by model version, region, income segment, channel, feature availability, and limit band. Fairness review compared selection and outcomes but did not assume equal approval alone proved fairness; repayment performance, false rejection, explanations, and access to the limited path also mattered.
 
-The BIS and World Bank work on payment aspects of financial inclusion reinforced the importance of a useful transaction account and accessible payment infrastructure. Credit was more sustainable when it sat inside a recurring financial relationship rather than appearing as an isolated loan offer.
+## Model three: acquire inside a useful financial habit
 
-## The regulatory pathway was part of the product
+Paid media benchmarks in the source page exceeded $100 per customer, incompatible with a sub-$10 target. I embedded discovery and consent in telco, ride-hailing/super-app, and commerce journeys where customers already paid, sold, traveled, or topped up.
 
-I worked through a bounded sandbox process that covered eKYC, consent, explanations, bias tests, fraud controls, customer safeguards, and monthly drift monitoring. Each expansion decision considered approval, acquisition cost, loss, fairness, and operating readiness together.
+The distribution partner was accountable beyond signup:
 
-## What the evidence showed
+- identity completion and consent quality;
+- approval and activation;
+- first useful payment;
+- support and complaint handoff;
+- repayment and early delinquency by channel;
+- acquisition cost per active, served customer.
 
-- Approval increased from below 10% to above 40%.
-- The launch reached more than 100,000 active users in 90 days.
-- Customer-acquisition cost remained below $10.
-- The portfolio maintained a 2.4% non-performing-loan ratio.
+The April 2016 CPMI–World Bank report made the period-appropriate product point: financial inclusion depends on adoption **and use** of a useful transaction account. Credit embedded in payments and commerce had more recurring utility than an isolated loan lead.
 
-## The product principle I carried forward
+## The regulatory path was bounded, but the source overstates certainty
 
-Financial inclusion is not achieved by maximizing approvals. It requires a product that creates access, earns repayment evidence over time, protects customer agency, and keeps portfolio quality inside an explicit boundary. I design the data, credit limit, distribution, and regulatory pathway as one system because weakening any one of them eventually weakens the others.
+The launch used a bounded testing approach for eKYC and liveness, consent, alternative features, explanations, fraud, fairness, exposure caps, complaints, and monthly drift.
 
-## External foundations
+The source calls this a “regulatory sandbox.” Singapore's Monetary Authority issued its sandbox consultation in June 2016, at the end of the role period. That is valid contemporaneous methodology but does not prove this bank participated in the Singapore sandbox. I describe the operating controls and bounded launch without naming a regulator or license that the record does not substantiate.
 
-These sources supplied the primary market, payments, and risk-control methodology. My resume is linked only to establish employment chronology.
+FATF's 2013 mobile and internet payment guidance supports risk-based controls rather than maximum friction for every customer. World Bank Global Findex 2014 supplies the period market-access evidence. Neither source validates the private model's performance; that rests on the launch record.
 
-| Source | How I applied it |
-|---|---|
-| [World Bank — Global Findex 2014 launch (2015)](https://www.worldbank.org/en/news/feature/2015/04/20/global-findex-2014-unveils-worlds-most-comprehensive-set-of-data-on-financial-inclusion) | I used its evidence on account access, mobile accounts, and digital payments to frame the addressable inclusion problem. |
-| [BIS and World Bank — Payment aspects of financial inclusion (2016)](https://www.bis.org/cpmi/publ/d144.htm) | I used its transaction-account and retail-payment framework to connect credit access to a recurring financial relationship. |
-| [FATF — Risk-based approach to mobile and internet payments (2013)](https://www.fatf-gafi.org/content/dam/fatf/documents/recommendations/Guidance-RBA-NPPS.pdf) | I used its risk-based identity and monitoring principles to balance access with AML/CFT controls. |
+## The four headline results must travel together
+
+| Measure | Baseline | Target | Reported result | Measurement caveat |
+|---|---:|---:|---:|---|
+| active customers | zero | 100,000 in 90 days | >100,000 | activation event and deduplication not retained |
+| approval | <10% | widen viable access | >40% | approved/eligible denominator needs recovery |
+| CAC | paid path >$100 benchmark | <$10 | <$10 | must confirm whether denominator is approved, activated, or retained |
+| NPL | no seasoned new-book baseline | within risk appetite | 2.4% | delinquency definition and vintage seasoning absent |
+
+Approval increased by more than 30 percentage points and more than fourfold. That is only healthy expansion if identity, fraud, repayment, complaints, and customer outcomes remain inside their bounds.
+
+The 2.4% NPL measure cannot fully validate a 90-day launch. Credit losses season over time, and “NPL” may mean 30, 60, or 90 days past due depending on the institution. I treat it as an early reported portfolio indicator, not lifetime expected loss.
+
+Likewise, sub-$10 CAC is compelling only if the denominator is a customer who completed identity, activated, and could use the account. A free registration is not an acquired banking relationship.
+
+## What I owned
+
+I owned the product thesis, feature-governance requirements, thin-file and no-data paths, graduated-limit policy, partner-distribution economics, bounded launch record, cross-functional alignment, and scorecard. Data Science owned model estimation; Risk owned credit policy and limits; Compliance and regulators owned approval; partners supplied identity, data, and distribution under defined contracts; Operations and Collections owned customer outcomes after decision.
+
+The work was not a credit-model hack. It was a system in which consented evidence could establish eligibility, a small product could establish trust, and embedded distribution could make the economics work—without converting “financial inclusion” into a license to approve blindly.
+
+Period references: [World Bank Global Findex 2014 launch](https://www.worldbank.org/en/news/feature/2015/04/20/global-findex-2014-unveils-worlds-most-comprehensive-set-of-data-on-financial-inclusion), [CPMI–World Bank, *Payment aspects of financial inclusion*, April 2016](https://www.bis.org/cpmi/publ/d144.htm), [FATF risk-based guidance for mobile and internet payments, June 2013](https://www.fatf-gafi.org/content/dam/fatf-gafi/guidance/Guidance-RBA-NPPS.pdf.coredownload.pdf), and the [MAS sandbox consultation, June 2016](https://www.nas.gov.sg/archivesonline/data/pdfdoc/20160606006/Media%20release%20-%20Public%20Consultation%20on%20Sandbox%20Guidelines_FINAL.pdf).
+
