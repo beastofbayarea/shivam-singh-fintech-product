@@ -16,6 +16,10 @@ Use the PDF for review and sharing. Use the DOCX for editable, ATS-friendly appl
 - KYC, RegTech, and data residency
 - Transaction infrastructure and product economics
 
+## Selected work sample
+
+- [IMC trader-platform product strategy](./work-samples/imc-trader-platform-product-strategy.pptx) - trader workflow modernization, risk-aware prioritization, and delivery roadmap
+
 ## Profile
 
 [LinkedIn](https://www.linkedin.com/in/beastofbayarea)
