@@ -1,78 +1,70 @@
-# Keeping Institutional Digital Assets in Custody When the Client Needed to Trade
+# Keeping institutional digital assets in custody when the client needed to trade
 
-I led a product strategy for institutions that wanted to trade digital assets without moving them out of trusted custody. I had identified that clients lost time and the platform lost trading business because custody and execution were separate services. I worked with institutional clients, custody operations, traders, risk, compliance, treasury, engineering, sales, and finance.
+The platform held assets safely and lost the highest-value moment.
 
-This project is assigned to my D. E. Shaw role from July 2016 to December 2019. The underlying source page also contains a “McKinsey” variation and public-looking 2021 custody-company metrics that postdate the role. D. E. Shaw describes itself as an investment and technology development firm, not a public digital-asset custodian. I therefore reconstruct the work as a product strategy/pilot and exclude the later company figures rather than imply ownership of another company's results.
+Wallet-flow analysis indicated that roughly 70% of targeted institutional outflows went to competitor execution venues. Clients trusted custody but could wait up to 24 hours to move a cold asset, so urgent trades and fees left the relationship.
 
-## The observable leak
+During my D. E. Shaw role, I led the product strategy across institutional clients, custody operations, trading, treasury, risk, compliance, engineering, sales, and finance. I converted the leak into a controlled bridge between two products that had to remain operationally distinct.
 
-Blockchain and wallet-flow analysis indicated that about 70% of targeted institutional outflows went to competitor execution venues. The client trusted the custody control but could wait as long as 24 hours for an asset movement from cold storage, so urgent trading activity and fees left the platform.
+## The metric was client share of wallet, not market volume
 
-I turned that leakage into a new institutional product boundary: measure client-level share of wallet, rank the economic backlog, prove price and routing demand with ten high-churn institutions, design immediate trading credit against controlled assets, and force custody, Treasury, Risk, Compliance, execution, and settlement to agree where authority changed hands. The pilot moved access from up to 24 hours to under a second and trading volume to five times baseline without relabeling credit as custody movement.
+Rising crypto prices could lift every venue. I defined the business measure as:
 
-Total crypto volume was a poor measure because a rising market could lift every venue. I chose **share of each client's observable execution wallet**:
+**captured execution volume on the proposed service / total observable execution volume for the client**
 
-`execution volume captured on proposed service ÷ total observable execution volume for that client`
+It excluded opaque off-chain or prime-broker activity, but it was closer to the product problem than total market volume.
 
-This did not reveal all off-chain or prime-broker activity, but it was closer to the business problem than market-wide volume.
+I then ranked requests by observed outflow, tagged lost economics, urgency, implementation risk, and balance-sheet exposure. The sequence became:
 
-## I turned requests into blocked economics
+1. test pricing with high-churn clients;
+2. close the custody-to-trade timing gap;
+3. expose institutional accounts/sub-accounts via API;
+4. join custody and execution economics;
+5. expand asset breadth only after credit and operations held.
 
-Sales wanted API sub-accounts, lower fees, instant liquidity, and speculative asset expansion. I ranked them by observed outflow, tagged lost opportunity, client urgency, implementation risk, and balance-sheet exposure.
+NFT and DeFi breadth stayed behind reliability because they had less evidenced blocked value and more unresolved risk.
 
-The first sequence was:
+## Ten clients established routing demand
 
-1. prove price elasticity with existing high-churn clients;
-2. remove the custody-to-trade time gap;
-3. expose institutional account and execution controls through APIs;
-4. join custody and trading economics;
-5. expand assets only after operational and credit controls held.
+Ten high-churn institutions entered a 30-day shadow-pricing pilot with lower maker–taker rates and credits. Trading volume increased 400%—five times baseline—while observed outflows to targeted competitors fell close to zero.
 
-NFT and DeFi breadth stayed behind trading reliability because it had less evidenced blocked revenue and more unresolved risk.
+The cohort already held assets on-platform, which made the test stronger than a generic market pre/post. It was still selected, non-random, and bundled price with service change. I used the result as willingness-to-route evidence, not a clean elasticity coefficient.
 
-## The pricing test
+## Instant access came from credit, not pretending custody moved instantly
 
-Ten high-churn institutions entered a 30-day shadow-pricing pilot using lower maker–taker rates and fee credits. Pilot trading volume increased 400%, meaning five times the baseline level, while observed outflows to targeted competitor venues fell close to zero.
+The product created trading credit against verified, segregated assets:
 
-The design was more persuasive than a simple pre/post comparison because the clients and custodied assets were already present. It still was not randomized: the cohort was selected for churn, the offer bundled price and service changes, and market conditions could alter trading demand. The result established strong willingness-to-route evidence, not a clean elasticity coefficient.
+**eligible custody assets × haircut − obligations − concentration reserve = available trading credit**
 
-## The instant-credit product
+Before exposure, the service checked asset eligibility, valuation freshness, volatility haircut, client limit, concentration, settlement path, and authorized sub-account. Credit became available in under one second while cold assets remained under custody controls.
 
-Instead of moving cold assets into a hot execution wallet before every trade, the design created trading credit against verified, segregated custody assets.
+An illustrative “$100 million credit against $100 million custody” appears in design notes. I do not claim a live 100% advance rate; volatile collateral requires lower haircuts, eligible asset classes, hedging, or other protection.
 
-`eligible custodied assets × haircut – existing obligations – concentration reserve = available trading credit`
+Early concentration led us to dynamic haircuts, risk-based pricing, eligibility gates, and lower limits for unpredictable flows. The objective was immediate bounded access, not zero wait at any balance-sheet cost.
 
-Sub-accounts separated strategies and authorized users. Pre-trade checks validated asset eligibility, valuation freshness, volatility haircut, client limit, concentration, and settlement path. The execution balance could become available in under one second while the custody asset remained subject to its control process.
+## One proposition, four control domains
 
-“Up to $100 million of credit against $100 million of custody” appears in the design notes as an illustrative maximum. A 100% advance rate would be inappropriate for volatile collateral without eligible assets, stablecoin/cash treatment, hedging, or other protection. I do not present that example as the live limit.
+**Custody** retained segregation, key, withdrawal, and audit controls.
 
-Early concentration under volatile conditions led to dynamic haircuts, risk-based pricing, eligibility gates, and lower limits for less predictable flows. The product objective was not zero transfer time at any balance-sheet cost; it was immediate, bounded access for clients whose collateral and behavior supported it.
+**Credit** owned valuation, haircut, exposure, concentration, margin, and liquidation.
 
-## Custody and execution remained separate control domains
+**Execution** owned orders, market access, price, surveillance, and venue behavior.
 
-The flywheel joined the customer proposition without blurring responsibilities:
+**Settlement** reconciled obligations to custody and credit records.
 
-- custody retained segregation, key, withdrawal, and audit controls;
-- credit owned collateral valuation, haircut, exposure, liquidation, and concentration;
-- execution owned orders, market access, price, and surveillance;
-- settlement reconciled execution obligations against the custody/credit record;
-- commercial logic could credit trading fees against custody fees without netting away control evidence.
+Commercially, trading fees could offset custody fees. Operationally, no netting could erase evidence or transfer authority between domains.
 
-The CFTC's 2017 virtual-currency primer is the period-appropriate market reference. NIST's 2018 blockchain overview informs keys, ledgers, consensus, and off-chain dependencies. Neither source converts a strategy pilot into a licensed custody or exchange business.
+The [CFTC’s 2017 virtual-currency primer](https://www.cftc.gov/PressRoom/PressReleases/7631-17) and [NIST’s 2018 blockchain overview](https://doi.org/10.6028/NIST.IR.8202) provide period-appropriate context for custody, keys, ledgers, and off-chain dependencies. They do not establish licenses or validate this pilot.
 
-## Evidence I retain
+## What the pilot supports
 
-| Claim | Baseline | Result | Qualification |
-|---|---:|---:|---|
-| observed outflows to competitor execution | ~70% of targeted outflows | close to zero in pilot | on-chain/known venues only; selected cohort |
-| pilot trading volume | pre-offer client volume | +400% / 5× | 30 days, 10 clients, price and product bundled |
-| time to execution access | up to 24 hours | <1 second | credit availability, not movement of cold asset or final settlement |
-| share of wallet | low because execution left | materially recaptured | exact denominator/result not retained |
+- **Competitor leakage:** ~70% of targeted observable outflows → materially recapture → close to zero during the selected pilot. Method: known wallet/venue flows for the same ten-client cohort.
+- **Trading volume:** baseline index 100 → test material route change → 500 after 30 days. Method: comparable client volume; +400%.
+- **Access:** up to 24 hours → immediate bounded availability → <1 second. Method: request to approved execution credit—not cold-asset movement or final settlement.
+- **Share of wallet:** low → materially improve → exact result absent. Method: captured / observable client execution volume.
 
-I exclude the source page's 2021 institutional-volume and services-revenue figures because they postdate the role and appear to describe a broader public company. I also do not call competitor outflows “zero” when the retained phrasing is “close to zero.”
+The source also contains 2021 public-looking volume and revenue metrics that postdate my December 2019 departure and a McKinsey variation. I exclude them and present this as a product strategy/pilot, not ownership of a later public custody company.
 
-I owned the outflow diagnosis, economic backlog, pilot design, custody-to-credit proposition, API/sub-account requirements, commercial flywheel, and risk-control response. Custody, Treasury, Risk, Compliance, Engineering, and trading owners retained their approvals and operations. A regulated launch, legal entity, licenses, and client agreements would have been separate gates beyond product strategy.
+I owned the leakage diagnosis, share-of-wallet metric, economic backlog, pricing pilot, custody-to-credit proposition, API/sub-account requirements, commercial flywheel, and response to concentration risk. Custody, treasury, risk, compliance, engineering, and trading retained approval and operations. Licensing, legal entity, and client agreements remained separate launch gates.
 
-The strategic lesson is not that custody should become an exchange. It is that a trusted product can lose the customer's highest-value moment unless it offers a governed bridge to the next job.
-
-Relevant period sources: [CFTC LabCFTC Virtual Currency Primer, October 2017](https://www.cftc.gov/PressRoom/PressReleases/7631-17), [NIST IR 8202, *Blockchain Technology Overview*](https://doi.org/10.6028/NIST.IR.8202), and [D. E. Shaw's description of its investment and technology business](https://www.deshaw.com/what-we-do).
+The strategic product insight was that trust can create a moat and a trap. Custody retained the client only until the next urgent job; a governed credit bridge let the platform serve that moment without weakening the custody boundary that earned trust in the first place.
