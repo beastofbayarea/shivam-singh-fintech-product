@@ -22,7 +22,7 @@ The projects below follow my career experience from newest to oldest. I’ve wri
 
 #### [Financial-services agent platform: regulated workflows](./projects/financial-services-agent-platform-regulated-workflows.md)
 
-I defined a managed execution layer that moved financial-services agents from prototypes into regulated production workflows. The product combined managed reasoning, integrated knowledge, permissioned actions, configurable traces, circuit breakers, human approval, and cost-aware model routing.
+I defined a managed execution layer that moved financial-services agents from prototypes into regulated production workflows. The product combined managed reasoning, integrated knowledge, permissioned actions, risk-tiered traces, circuit breakers, human approval, and cost-aware model routing while keeping accelerated adoption, modeled savings, and customer outcomes on their proper denominators.
 
 ### Rakuten Group, Inc.
 
@@ -30,7 +30,7 @@ I defined a managed execution layer that moved financial-services agents from pr
 
 #### [Payment terminal HaaS: merchant growth](./projects/payment-terminal-haas-merchant-growth.md)
 
-I reframed a payment terminal from a one-time hardware sale into a zero-upfront merchant service. Payment volume, connectivity, automated standard KYC, usage controls, and recurring contribution created a lifecycle model around active merchants rather than devices shipped.
+I reframed Rakuten's ¥38,280 tax-inclusive launch product from a one-time terminal sale into a zero-upfront merchant service. Payment volume, connectivity, automated standard KYC, usage controls, and cohort contribution created a lifecycle model around active merchants while separating observed pilot behavior from modeled LTV and payback.
 
 ### Microsoft Corporation
 
@@ -38,7 +38,7 @@ I reframed a payment terminal from a one-time hardware sale into a zero-upfront 
 
 #### [Regulated FinTech cloud: sovereign data platform](./projects/regulated-fintech-cloud-sovereign-data-platform.md)
 
-I productized two linked regulated-cloud needs under the Microsoft FinTech role: a time-critical trading workload and a ten-market sovereignty launch. Performance SLOs, jurisdiction rules, regional data controls, and audit evidence became a reusable financial-services deployment pattern.
+I productized two linked regulated-cloud needs under the Microsoft FinTech role: a time-critical trading workload and a ten-market sovereignty launch. Workload priority, jurisdiction rules, regional data controls, and audit evidence became a reusable release pattern without conflating a six-hour reconciliation process with a 480-millisecond critical query.
 
 ### The D. E. Shaw Group
 
@@ -46,11 +46,11 @@ I productized two linked regulated-cloud needs under the Microsoft FinTech role:
 
 #### [Institutional digital assets: custody and execution](./projects/institutional-digital-assets-custody-execution.md)
 
-I redesigned a trusted custody product into a custody-to-execution flywheel. Instant credit against segregated assets, API sub-accounts, maker-taker pricing, fee credits, and risk limits brought execution activity back onto the platform without weakening custody controls.
+I developed and piloted a custody-to-execution product strategy assigned to my D. E. Shaw experience. Instant credit against segregated assets, API sub-accounts, maker-taker pricing, fee credits, and risk limits targeted observable outflows; the project excludes post-role public-company figures embedded in the source material.
 
 #### [Real-time risk: capital release](./projects/real-time-risk-capital-release.md)
 
-I built a unified, streaming risk gate that governed each transaction at execution speed. A common trade model, deterministic capital checks, explainable fraud detection, degraded-mode controls, and a three-month shadow period replaced slow retrospective risk without rewriting proven quantitative libraries.
+I built a unified, streaming risk gate that governed each transaction at execution speed. A common trade model, deterministic limits, explainable anomaly detection, degraded-mode controls, and a three-month authority transfer replaced slow retrospective risk. The reported $85M is internal risk capital or balance-sheet capacity—not unsubstantiated Basel regulatory capital.
 
 ### McKinsey & Company
 
@@ -58,4 +58,4 @@ I built a unified, streaming risk gate that governed each transaction at executi
 
 #### [Southeast Asia neobank: alternative credit](./projects/southeast-asia-neobank-alternative-credit.md)
 
-I helped launch a neobank for a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior, fairness and fraud controls, graduated limits, eKYC, and embedded super-app distribution expanded access without abandoning credit quality.
+I led the alternative-credit product for a neobank serving a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior, fairness and fraud controls, graduated limits, eKYC, and embedded distribution expanded access; the 2016 Singapore sandbox is treated as methodology, not proof of program participation.
