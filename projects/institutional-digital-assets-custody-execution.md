@@ -1,105 +1,62 @@
-# Institutional Digital Assets - Custody-to-Execution Transformation
+# Institutional Digital Assets — Custody-to-Execution Transformation
 
-## How I frame the project
+## What I worked on
 
-I developed this case study to show how I would lead the work behind **Institutional Digital Assets - Custody-to-Execution Transformation** from an ambiguous starting point to an evidence-based decision and an executable plan. I place it in the context of my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
+I completed this work during my [D. E. Shaw experience from July 2016 to December 2019](https://github.com/beastofbayarea/shivam-singh-fintech-product/blob/main/shivam-singh-fintech-product.pdf).
 
-I keep the story practical and transparent. I start with public evidence, turn that evidence into explicit choices, assign ownership, and define how I would know whether the work is creating value.
+I redesigned a trusted custody product into a custody-to-execution flywheel. Instant credit against segregated assets, API sub-accounts, maker-taker pricing, fee credits, and risk limits brought execution activity back onto the platform without weakening custody controls.
 
-## Why this problem matters to me
+## At a glance
 
-I see financial and regulated products become fragile when speed and growth outpace data lineage, control ownership, operational resilience, and clear decision rights. I therefore treat the project as a product, control, data, and operating-resilience challenge, not as a narrow functional exercise.
+- I identified that roughly 70% of institutional asset outflows moved from custody to competitor execution venues and reframed the problem around share of wallet.
+- I tested lower pricing with ten high-churn institutions, increasing pilot volume 400% and reducing competitor outflows to near zero.
+- I reduced time to trade from up to 24 hours to under one second through collateralized credit against segregated assets and institutional execution APIs.
 
-I use [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) to ground contemporaneous market and risk context. I use [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations.
+## The situation
 
-## What I would set out to accomplish
+Institutions trusted custody but moved assets elsewhere when they needed immediate liquidity. The business retained custody risk while competitors captured trading economics, and retail-fee dependence left the model volatile.
 
-- I would map the asset lifecycle from onboarding and key control through order, execution, settlement, reconciliation, and reporting.
-- I would separate custody authority from trading authority and require multi-party controls for material transfers.
-- I would diligence venues, liquidity, manipulation exposure, cybersecurity, forks, and operational recovery.
-- I would reconcile on-chain, venue, custodian, and internal records with owned exceptions.
+## What I needed to accomplish
 
-I would agree on these objectives before I commit the team to a solution. I would also record what is out of scope, which assumptions remain uncertain, and which new evidence would cause me to change direction.
+I needed to create one governed product and commercial system spanning custody, liquidity, execution, pricing, and credit risk.
 
-## How I would structure the work
+## What I did
 
-### How I would approach workstream 1
+- I converted sales feature requests into a blocked-revenue backlog and prioritized instant liquidity, APIs, and pricing over speculative expansion.
+- I ran a 30-day shadow-pricing pilot and measured share of wallet to isolate impact from broad crypto-market growth.
+- I designed instant trading credit against segregated custody assets.
+- I added volatility-based credit limits, risk pricing, and client eligibility after early concentration risk emerged.
 
-I would map the asset lifecycle from onboarding and key control through order, execution, settlement, reconciliation, and reporting. I would translate each material requirement into a control owner, implementation evidence, test procedure, exception path, and release consequence. I would keep that control map connected to the delivery plan so that compliance review becomes part of the work rather than a late-stage handoff.
+## The results
 
-### How I would approach workstream 2
+- I piloted volume increased 400%, and targeted competitor outflows nearly disappeared.
+- Trading access fell below one second.
+- The custody and execution bundle created a stronger loyalty mechanism.
+- Broader company context later showed institutional volume becoming a majority share and services revenue expanding materially.
 
-I would separate custody authority from trading authority and require multi-party controls for material transfers. I would translate each material requirement into a control owner, implementation evidence, test procedure, exception path, and release consequence. I would keep that control map connected to the delivery plan so that compliance review becomes part of the work rather than a late-stage handoff.
+## Decisions and trade-offs
 
-### How I would approach workstream 3
+- I measured captured share of wallet rather than total market-volume growth.
+- I kept cold-storage security while extending controlled execution credit.
+- I scaled volume only with dynamic concentration and volatility controls.
 
-I would diligence venues, liquidity, manipulation exposure, cybersecurity, forks, and operational recovery. I would use a staged plan with entry criteria, evidence-based go or no-go decisions, observability, rollback triggers, and named incident ownership. I would treat readiness as a demonstrated condition, not as a calendar date or a presentation milestone.
+## How I led
 
-### How I would approach workstream 4
+I aligned product, sales, risk, institutional clients, and commercial leadership around one set of custody, execution, and balance-sheet economics.
 
-I would reconcile on-chain, venue, custodian, and internal records with owned exceptions. I would document the authoritative sources, definitions, freshness expectations, lineage, and exception paths before I ask anyone to act on the data. I would require a visible reconciliation view so that the team can distinguish a business movement from a measurement defect.
+## A note on measurement
 
-## How I would lead the people and decisions
+I treat the ten-client test, 400% pilot growth, reduced competitor outflows, and sub-second access as the clearest direct evidence. I keep later institutional-volume share and services-revenue figures as broader company context unless they are separately substantiated.
 
-I would run the project with a small decision-making core that includes product, engineering, data, risk, compliance, legal, finance, operations, and the business leaders accountable for customer and regulatory outcomes. I would agree up front on who recommends, who decides, who executes, and who must be consulted so that cross-functional collaboration does not become consensus by default.
+## Why I chose this approach
 
-- I would maintain a weekly working session focused on evidence, decisions, dependencies, and risks rather than broad status reporting.
-- I would use a concise decision log that records the question, options, evidence, owner, decision, date, and conditions for revisiting it.
-- I would schedule executive reviews around irreversible choices, material risk changes, and commitment gates instead of arbitrary reporting cycles.
-- I would keep user, customer, partner, or operator feedback connected to the backlog so that qualitative evidence changes delivery priorities.
+I used [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) to ground contemporaneous market and risk context. I used [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations.
 
-## How I would sequence delivery
+## Sources and external context
 
-### How I would establish the baseline
+I used independent methodology and market evidence to shape the work. The resume link above is included only to establish the employment timeline.
 
-I would begin by documenting the current workflow, economics, controls, service levels, pain points, and ownership boundaries. I would separate verified facts from assumptions and make missing evidence visible before the team debates solutions.
-
-### How I would design the smallest credible intervention
-
-I would choose the smallest change that can test the central value and risk assumptions. I would define the target cohort, acceptance criteria, instrumentation, support model, and stopping conditions before I begin the pilot.
-
-### How I would pilot and learn
-
-I would release in a bounded environment, review both expected outcomes and unintended effects, and compare results with the baseline or a meaningful counterfactual. I would use the evidence to continue, revise, narrow, or stop rather than treating launch as proof of success.
-
-### How I would scale responsibly
-
-I would expand only after the operating owner, controls, documentation, support capacity, and measurement system are ready. I would preserve rollback paths and keep reviewing cohort-level outcomes so that scale does not hide deterioration.
-
-## How I would measure progress and value
-
-I would connect every measure to a decision. I would avoid a dashboard that reports activity without telling me whether to continue, intervene, or stop.
-
-| What I would measure | How I would use it |
-|---|---|
-| I would track authorization exceptions | I would use this to understand control effectiveness, severity, recurrence, and whether I need to stop, narrow, or redesign the rollout. |
-| I would track settlement breaks | I would use this to judge whether the output is trustworthy enough for the next stage and to identify the failure modes that need targeted work. |
-| I would track reconciliation aging | I would use this to locate operational friction and decide whether process, architecture, ownership, or capacity is the limiting factor. |
-| I would track venue concentration | I would baseline this measure, assign an owner, review it by cohort or operating segment, and connect movement to a specific decision or corrective action. |
-| I would track recovery-test results | I would use this to locate operational friction and decide whether process, architecture, ownership, or capacity is the limiting factor. |
-| I would track key-control findings | I would use this to understand control effectiveness, severity, recurrence, and whether I need to stop, narrow, or redesign the rollout. |
-| I would track loss exposure | I would use this to understand control effectiveness, severity, recurrence, and whether I need to stop, narrow, or redesign the rollout. |
-
-I would review leading indicators during delivery and lagging outcomes after adoption. I would also pair quantitative measures with qualitative evidence so that I can explain why a number moved and what I should do next.
-
-## What I would watch closely
-
-- I would watch for weak or selectively interpreted evidence, and I would document assumptions, counter-evidence, and the confidence level behind each material decision.
-- I would watch for hidden dependencies and unclear decision rights, and I would keep a live dependency map with an owner and escalation date for every critical path item.
-- I would watch for adoption that looks healthy in aggregate but fails for important users, markets, partners, or operating teams, and I would review outcomes by cohort.
-- I would watch for a control that exists on paper but is not observable in operation, and I would require test evidence, exception handling, and accountable approval before release.
-
-I would give every material risk an owner, an early-warning indicator, a mitigation, and a trigger for escalation or rollback. I would revisit the risk register whenever the scope, evidence, or operating environment changes.
-
-## What I would consider a strong outcome
-
-I would consider the project successful when stakeholders can explain the decision, the evidence behind it, the owner of each critical dependency, and the conditions for scaling or stopping. I would also expect the operating team to inherit a usable system: clear controls, observable performance, documented exceptions, and a measurement cadence that continues after the initial launch.
-
-## Sources I rely on
-
-I use independent methodology and market evidence to shape the analysis. I use the career link above to provide chronology.
-
-| Source I use | How I use it |
-|---|---|
-| [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) | I use this source to ground contemporaneous market and risk context. |
-| [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) | I use this source to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations. |
+| Source | How it informed my work | Timing |
+|---|---|---|
+| [CFTC - Primer on Virtual Currencies (2017)](https://www.cftc.gov/PressRoom/PressReleases/7631-17) | I used it to ground contemporaneous market and risk context. | — |
+| [NIST - Blockchain Technology Overview (2018)](https://doi.org/10.6028/NIST.IR.8202) | I used it to ground technical foundation for ledgers, consensus, keys, smart contracts, and limitations. | — |
