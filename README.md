@@ -34,6 +34,22 @@ The product question was never “Can the agent do it?” It was “Who allowed 
 
 [The Southeast Asia neobank](./projects/southeast-asia-neobank-alternative-credit.md) was designed for a market where roughly 70% of target users lacked formal credit histories. Consented telco behavior supported eligibility, a small first limit created an observable repayment path, and later exposure was earned through behavior rather than inferred entitlement. Embedded distribution and eKYC kept CAC below $10 against paid alternatives above $100. Approval rose from below 10% to above 40%, more than 100,000 active users were reported in 90 days, and early NPL was 2.4%, with seasoning limitations preserved.
 
+## Product-strategy answer — real-time risk
+
+**Q: Give an example where you identified a problem, developed the product strategy, and drove a quantified outcome.**
+
+**A:** I identified that our risk problem was not simply slow infrastructure. Trade decisions were being evaluated through fragmented schemas and retrospective controls: checks took about 90 milliseconds, 15% of activity entered manual review, and teams could not cleanly separate a hard policy violation from an unusual but legitimate trade.
+
+My root-cause analysis decomposed the path from order creation through normalization, deterministic limits, anomaly detection, decision, and audit. Production traces and review outcomes ruled out three tempting explanations. More compute alone would not fix inconsistent trade meaning. A more sophisticated anomaly model would not resolve conflicting limits. Adding reviewers would increase capacity but preserve the slow, unexplainable decision path. The structural causes were the lack of a common trade language, rules and suspicion being mixed together, and no safe method for transferring authority to a real-time system.
+
+I set the strategy around four product decisions. First, every venue and asset class had to compile into one governed trade model. Second, deterministic capital, concentration, and eligibility rules remained outside machine-learning judgment. Third, anomaly detection explained why a trade was suspicious and routed only the necessary cases. Fourth, degraded modes and staged promotion ensured the system failed safely and earned authority one gate at a time.
+
+The PRD defined user decisions, latency and risk outcomes, scope, and promotion metrics. Engineering used the RFC to compare stream, rules, feature, and serving architectures. The common-trade representation and authority boundary were captured as hard-to-reverse ADRs. A three-month shadow period and launch-readiness checklist required performance, decision equivalence, reason-code quality, fallback, reconciliation, Risk approval, and Operations ownership before production transfer.
+
+The result was a risk check that moved from 90 milliseconds to 4.2 milliseconds. Shadow comparison reached roughly 98% overall agreement, false positives fell about 90%, and the platform blocked $15 million of harmful exposure. Finance reported $85 million of released internal risk or balance-sheet capacity. I preserve that definition rather than calling it regulatory capital or a simple return on the roughly $10 million build.
+
+I owned the problem definition, causal diagnosis, product boundary, roadmap, cross-functional trade-offs, promotion gates, and executive outcome account. Engineering built the platform, Risk and Compliance retained policy authority, and Trading retained business decisions. The strategy succeeded because it made faster decisions and clearer accountability the same product outcome.
+
 ## The portfolio-level product thesis
 
 These products span agents, payments, credit, trading, risk, custody, cloud, and merchant services, but they share one architecture:
